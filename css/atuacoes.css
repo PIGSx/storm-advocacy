@@ -1,0 +1,356 @@
+body {
+    --color-black: #000;
+    --color-black-light: #777777;
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #3a3757;
+    --back-fundo: #fff;
+}
+
+body.dark {
+    --color-black: #fff;
+    --color-white: #000;
+    --color-light: #777777;
+    --color-black-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #3a3757;
+    --back-fundo: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--back-fundo);
+    transition: 0.4s background-color;
+}
+
+/*==== capa inicial ====*/
+.case {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black-light);
+    background: url(../img/atuacoes/back.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
+}
+
+.show-container {
+    text-align: center;
+}
+
+.show-container h2 {
+    font-size: 2rem;
+}
+
+/*==== cards - areas ====*/
+
+img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 7rem 0;
+    overflow: hidden;
+}
+
+.services {
+    position: relative;
+}
+
+.services .title,
+.services .title:before {
+    color: var(--color-black);
+}
+
+.services .title:after {
+    background-color: var(--details);
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0.45rem 0.4rem;
+    padding: 0.85rem 1.8rem;
+    color: var(--color-black-light);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background-color: var(--details);
+    color: var(--color-white);
+}
+
+.grid {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.grid-item {
+    width: 33.33%;
+    padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 330px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    position: absolute;
+    height: 115%;
+    width: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: 0.5s;
+}
+
+.gallery-image .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #f4f4f4;
+    background-color: rgba(120, 76, 251, 0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem 3.2rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-description {
+    width: 100%;
+}
+
+.img-overlay h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.img-overlay h5 {
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+.gallery-image:hover .img-overlay {
+    opacity: 1;
+}
+
+.gallery-image:hover img {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.more-folio {
+    display: flex;
+    justify-content: center;
+}
+
+/*===== rodapé ====*/
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    transition: background 0.3s linear;
+}
+
+footer .container {
+    max-width: 1240px;
+    padding: 30px 40px;
+    margin: auto;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile .logo-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile .logo-area img {
+    border-radius: 50%;
+    border: 1px solid var(--color-white);
+}
+
+.logo-area .logo-nome {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    color: var(--color-black-light);
+}
+
+.desc-area {
+    max-width: 320px;
+    margin-bottom: 1.23rem;
+}
+
+.desc-area p {
+    color: var(--color-black-light);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.social-media a {
+    color: var(--color-black-light);
+    margin-right: 22px;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: var(--details);
+}
+
+.service-area {
+    display: flex;
+}
+
+.service-header {
+    margin-right: 40px;
+}
+
+li.service-name {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.service-header li a {
+    color: var(--color-black-light);
+    padding-bottom: 1px;
+    font-weight: 400;
+}
+
+.service-header li a:hover {
+    color: var(--back-primary);
+}
+
+.service-header li {
+    margin-bottom: 10px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: var(--details);
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.copy-righy {
+    color: var(--color-black-light);
+    display: flex;
+    align-items: center;
+}
+
+.copy-righy span {
+    margin-left: 8px;
+    font-weight: 400;
+    letter-spacing: 0.135rem;
+}
+
+.termos a {
+    color: var(--color-black-light);
+    margin-left: 1.5rem;
+}
+
+.termos a:hover {
+    color: var(--color-black);
+}
+
+/*==== Responsive CSS ====*/
+@media screen and (max-width: 920px) {
+
+    /*===== rodapé ====*/
+    .content-footer {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .service-area {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .service-header {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .social-media {
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+
+    /*==== rodapé ====*/
+    .service-header {
+        margin-bottom: 8px;
+    }
+
+    .copy-righy {
+        margin-bottom: 8px;
+    }
+}
