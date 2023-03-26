@@ -21,7 +21,7 @@ include('poup.php');
     <video class="video-slide active" src="mp4/home/reuniao.mp4" autoplay muted loop></video>
     <video class="video-slide" src="mp4/home/code.mp4" autoplay muted loop></video>
     <video class="video-slide" src="mp4/home/digitando.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="mp4/home/r.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="mp4/home/r.png" autoplay muted loop></video>
     <video class="video-slide" src="mp4/home/mulher-andando.mp4" autoplay muted loop></video>
     <div class="content active">
       <h1>bla<br><span>ble</span></h1>
