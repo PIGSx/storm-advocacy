@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    --color-black: #000;
+    --color-black-light: #777777;
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #3a3757;
+    --back-fundo: #fff;
+}
+
+body.dark {
+    --color-black: #fff;
+    --color-white: #000;
+    --color-light: #777777;
+    --color-black-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #3a3757;
+    --back-fundo: #000;
+}
+
+body {
+    background-color: var(--back-fundo);
+    transition: 0.4s background-color;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 40px;
+}
+.containers {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "userProfile userDetails"
+        "information timeline_about"
+        "information timeline_about";
+    width: 85%;
+    height: 90vh;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.3));
+    padding: 1.5rem;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(0, 0, 0, 0.08);
+}
+
+/*==== Container Cards Grid-area ====*/
+
+.userProfile {
+    grid-area: userProfile;
+}
+
+.information {
+    grid-area: information;
+}
+
+.userDetails {
+    grid-area: userDetails;
+}
+
+.timeline_about {
+    grid-area: timeline_about;
+}
+
+/*===== Container Cards ====*/
+.containers .card {
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(3rem);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+/*==== perfil ====*/
+.containers .userProfile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.containers .userProfile .profile figure img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+}
+
+/*==== informações do usuario ====*/
+.containers .information {
+    padding: 1.5rem;
+}
+
+.information .info .heading {
+    position: relative;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.information .info .heading::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0.1rem;
+    width: 88%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*==== detalhes ====*/
+.userDetails {
+    position: relative;
+    padding: 1.5rem 2.5rem;
+}
+
+.userDetails .userName h1 {
+    font-size: 2.2rem;
+}
+
+.userDetails .userName p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0099cc;
+    margin-bottom: 1.8rem;
+}
+
+.userDetails .btns ul,
+.userDetails .btns ul li {
+    display: flex;
+    align-items: center;
+}
+
+.userDetails .btns ul li {
+    margin-right: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.userDetails .btns ul li .ri {
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.userDetails .btns ul li a {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.userDetails .btns ul .active {
+    background: #e6f2ff;
+    padding: 0.5rem 1.5rem;
+}
+
+.userDetails .btns ul .active a,
+.userDetails .btns ul .active .ri {
+    color: #0099cc;
+}
+
+/*==== informações ====*/
+.timeline_about {
+    padding: 2.5rem;
+}
+
+.timeline_about .tabs ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.timeline_about .tabs ul::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    /* ===== =====>>  Container Css Start  <<===== ===== */
+    .containers {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "userProfile"
+            "userDetails"
+            "information"
+            "timeline_about";
+        overflow-x: hidden;
+        overflow-y: inherit;
+        padding: 0;
+        width: 90%;
+        height: 100%;
+        box-shadow: none;
+    }
+
+    /* ===== =====>>  Container Card Css Start  <<===== ===== */
+    .containers .card {
+        backdrop-filter: none;
+    }
+
+    .userDetails {
+        margin-bottom: 3rem;
+    }
+
+    .containers::before,
+    .containers::after {
+        display: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        .containers {
+            width: 100%;
+            overflow: initial;
+        }
+    }
+}
