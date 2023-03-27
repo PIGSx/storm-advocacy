@@ -15,27 +15,31 @@
     list-style: none;
     text-decoration: none;
 }
-html{
+
+html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
-.menu{
+
+.menu {
     background-color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
     color: var(--color-white);
     max-width: 100vh;
 }
-h3{
+
+h3 {
     color: var(--color-black);
     line-height: 1.2;
     font-size: 1.6rem;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
-nav{
+
+nav {
     width: 100%;
     height: 5rem;
     background-color: var(--color-white);
@@ -47,20 +51,24 @@ nav{
     z-index: 1000;
     border-bottom: 1px solid var(--color-light);
 }
-nav .container{
+
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
-nav h3{
+
+nav h3 {
     color: var(--details);
 }
-nav .container ul{
+
+nav .container ul {
     display: flex;
     height: 100%;
 }
-nav .container ul li a{
+
+nav .container ul li a {
     height: 100%;
     width: 7rem;
     display: flex;
@@ -70,15 +78,18 @@ nav .container ul li a{
     position: relative;
     transition: all 300ms ease;
 }
-nav .container ul li a:hover{
+
+nav .container ul li a:hover {
     color: var(--details);
 }
-nav .container ul li a.active{
+
+nav .container ul li a.active {
     background-color: var(--details);
     color: var(--color-white);
 }
-/* botao dark-mode */
-.toggle-btn{
+
+/*==== botao dark-mode ====*/
+.toggle-btn {
     color: var(--details);
     min-width: 40px;
     height: 40px;
@@ -91,8 +102,23 @@ nav .container ul li a.active{
     cursor: pointer;
     transition: 0.3s;
 }
-.toggle-btn:hover{
+
+.toggle-btn:hover {
     filter: brightness(97%);
+}
+
+/*==== botao perfil ====*/
+nav .container ul .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    position: relative;
+}
+nav .container ul .icons i{
+    margin: 12px;
+    font-size: 20px;
+    color: var(--details);
 }
 /*==== menu mobile ====*/
 .hamburguer-menu-container {
@@ -100,7 +126,7 @@ nav .container ul li a.active{
     display: none;
     align-items: center;
     justify-content: flex-end;
-    margin: 18px ;
+    margin: 18px;
 }
 
 .hamburguer-menu {
@@ -181,27 +207,32 @@ nav .container ul li a.active{
 
 
 @media screen and (max-width: 920px) {
-    h3{
+    h3 {
         font-size: 1.2rem;
     }
+
     /* menu */
     .hamburguer-menu-container {
         display: flex;
     }
-    
+
     #check {
         display: block;
     }
-    nav{
-        box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
+
+    nav {
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     }
-    nav h3{
+
+    nav h3 {
         margin-left: 1rem;
     }
-    nav .container{
+
+    nav .container {
         width: 100%;
     }
-    nav .container ul{
+
+    nav .container ul {
         position: fixed;
         top: 4rem;
         left: 0;
@@ -215,20 +246,23 @@ nav .container ul li a.active{
         transform: translateX(56rem);
         transition: transform 0.5s ease-in;
     }
+
     #check:checked~.links {
         transform: translateX(0);
     }
-    
-    nav ul li{
+
+    nav ul li {
         height: 4.6rem;
         width: 100%;
     }
-    nav .container ul li a{
+
+    nav .container ul li a {
         width: 100%;
         justify-content: start;
         padding-left: 2rem;
     }
-    nav .container ul li a:hover{
+
+    nav .container ul li a:hover {
         padding-left: 3rem;
     }
 }
