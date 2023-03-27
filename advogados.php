@@ -12,9 +12,25 @@ include('menu-atuacoes.php');
 </head>
 
 <body>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-info">
+                    <h3 class="name">Yunk Vino</h3>
+                    <h3 class="funcao">artista</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="about-img">
+                    <img src="img/advogados/1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="qualification">
         <h2 class="section-title">qualificações</h2>
-        <span class="section-subtitle">pigs x educação</span>
+        <span class="section-subtitle">educação x áreas de atuação</span>
         <div class="qualification-container container grid section-border">
             <div class="qualification-content">
                 <h3 class="qualification-title">educação</h3>
@@ -37,7 +53,7 @@ include('menu-atuacoes.php');
                 </div>
             </div>
             <div class="qualification-content">
-                <h3 class="qualification-title">educação</h3>
+                <h3 class="qualification-title">qualificações</h3>
                 <div class="qualification-info">
                     <div class="txt-geral">
                         <h3 class="qualification-name">produtor audiovisual</h3>
