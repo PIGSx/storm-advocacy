@@ -48,7 +48,7 @@ include('menu-log.php');
         </div>
 
         <div class = "contact-form">
-          <form>
+        <form action="https://formsubmit.co/storm.tcc04@gmail.com" method="POST" class="form">
             <div>
               <input type = "text" class = "form-control" placeholder="nome">
               <input type = "text" class = "form-control" placeholder="sobrenome">
