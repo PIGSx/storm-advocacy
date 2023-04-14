@@ -14,6 +14,8 @@ include('poup.php');
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!-- icon -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- slider -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="dark">
@@ -132,14 +134,15 @@ include('poup.php');
       </div>
     </div>
   </section>
- <section class="login">
-  <div class="inner-container">
-    <h1>Receba nossas atualizações jurídicas</h1>
-    <p>Para ler onde e quando quiser. Selecione os temas de interesse e cadastre-se preenchendo os campos obrigatórios.</p>
-    <div class="button">
+  <section class="login">
+    <div class="inner-container">
+      <h1>Receba nossas atualizações jurídicas</h1>
+      <p>Para ler onde e quando quiser. Selecione os temas de interesse e cadastre-se preenchendo os campos
+        obrigatórios.</p>
+      <div class="button">
+      </div>
     </div>
-  </div>
- </section>
+  </section>
   <section class="app" id="app">
     <h1 class="heading"> storm app</h1>
     <div class="column">
@@ -156,6 +159,130 @@ include('poup.php');
         <div class="buttons">
           <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
           <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback section" id="feedback">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="title" data-title="Oque as pessoas dizem sobre a">advocacy</h3>
+      </div>
+
+      <div class="testi-content grid-2">
+        <div class="column-1 reviews">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review">
+                <i class="fas fa-quote-left quote"></i>
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                  Ótima empresa, super atenciosos e prestam um serviço de qualidade!
+                </p>
+
+                <div class="review-info">
+                  <h3 class="review-name">kylie</h3>
+                  <h5 class="review-job">model, CAN</h5>
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <i class="fas fa-quote-left quote"></i>
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                  Sabe quando você está perdida e não sabe oque fazer? eu estava assim até conhecer a storm.
+                </p>
+
+                <div class="review-info">
+                  <h3 class="review-name">Talita Oliveira</h3>
+                  <h5 class="review-job">CEO of Drope Sneakers, EUA</h5>
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <i class="fas fa-quote-left quote"></i>
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                  Fortaleceram muito na criação do sistema para barbearia.
+                </p>
+
+                <div class="review-info">
+                  <h3 class="review-name">Diego Acelino</h3>
+                  <h5 class="review-job">Director of BarberShop, SP</h5>
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <i class="fas fa-quote-left quote"></i>
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                  Trabalho e atendimento excelente, com certeza recomendo a empresa. Obrigado pela agilidade e atenção
+                  dada no projeto para criação do site da minha empresa.
+                </p>
+
+                <div class="review-info">
+                  <h3 class="review-name">Vitória Toccacelli</h3>
+                  <h5 class="review-job">enfermeira, SP</h5>
+                </div>
+              </div>
+
+              <div class="swiper-slide review">
+                <i class="fas fa-quote-left quote"></i>
+                <div class="rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                  Gostaria de dizer que o atendimento, administração da storm é surreal de bom. Parabéns a todos os
+                  envolvidos!!👏👏
+                </p>
+
+                <div class="review-info">
+                  <h3 class="review-name">Sofia Arruda</h3>
+                  <h5 class="review-job">Confeiteira, SP </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-nav swiper-button-prev">
+              <i class="fas fa-long-arrow-alt-left"></i>
+            </div>
+            <div class="review-nav swiper-button-next">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -219,6 +346,8 @@ include('poup.php');
   </footer>
   <script src="js/home.js"></script>
   <script src="js/dark.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/feedback.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
         <nav>
             <div class="container">
                 <input type="checkbox" name="" id="check">
-                <a href="index-log.php">
+                <a href="index.php">
                     <h3>ADVOCACY</h3>
                 </a>
                 <ul class="links">

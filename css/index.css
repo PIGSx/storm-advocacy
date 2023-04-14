@@ -407,6 +407,163 @@ section {
 .app .btn:hover {
     transform: scale(1.1);
 }
+/*==== feedback ====*/
+.section {
+	padding: 7rem 0;
+	overflow: hidden;
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.feedback {
+	overflow: hidden;
+}
+
+.feedback .container {
+	position: relative;
+	z-index: 5;
+	max-width: 92rem;
+	padding: 0 4rem;
+	margin: 0 auto;
+}
+
+.testi-content {
+	margin-top: 6rem;
+}
+
+.reviews {
+	overflow: hidden;
+}
+
+.review {
+	position: relative;
+	padding: 2rem 1.5rem;
+}
+
+.quote {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: var(--details);
+	opacity: 0.04;
+	font-size: 8rem;
+}
+.rate {
+	display: flex;
+	font-size: 1.4rem;
+	color: #ebc000;
+	margin-bottom: 1.5rem;
+}
+
+.rate i {
+	margin-right: 0.3rem;
+}
+
+.review-text {
+	font-size: 1.35rem;
+	font-weight: 300;
+	color: var(--color-black);
+	line-height: 1.7;
+}
+
+.review-info {
+	margin-top: 2rem;
+}
+
+.review-name {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--details);
+}
+
+.review-job {
+	font-size: 1.15rem;
+	font-weight: 300;
+	color: var(--color-black-light);
+}
+
+.review-nav {
+	bottom: 2.2rem;
+	top: initial;
+	font-size: 1.8rem;
+}
+.review-nav i{
+    color: var(--back-primary);
+}
+.swiper-button-next {
+	right: 2rem;
+	left: initial;
+}
+
+.swiper-button-prev {
+	right: 4.5rem;
+	left: initial;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+
+/*==== imagens feedback ====*/
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+/*==== textos dos reviews ====*/
+.title {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 1rem;
+	line-height: 1;
+	font-size: 2.8rem;
+	margin-bottom: 0.6rem;
+}
+
+.title:before {
+	content: attr(data-title);
+	display: block;
+	margin-bottom: 0.4rem;
+	color: var(--details);
+	font-size: 1.15rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.title:after {
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: var(--details);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.swiper-button-next {
+	right: 2rem;
+	left: initial;
+}
+
+.swiper-button-prev {
+	right: 4.5rem;
+	left: initial;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
 
 /*===== rodapé ====*/
 footer {
@@ -442,11 +599,11 @@ footer .container {
     border: 1px solid var(--color-white);
 }
 
-.logo-area .logo-nome {
+.logo-area .logo-name {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 1rem;
-    color: var(--color-black-light);
+    color: var(--color-black);
 }
 
 .desc-area {
@@ -580,6 +737,15 @@ hr {
     .social-media {
         margin-bottom: 1rem;
     }
+    	/* feedback */
+	.feedback img {
+		display: none;
+	}
+	.grid-2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
     .footer-bottom {
         flex-wrap: wrap;
@@ -651,6 +817,10 @@ hr {
     .copy-righy {
         margin-bottom: 8px;
     }
+    	/* feedback */
+	.section{
+		margin-top: 9rem;
+	}
 }
 
 @media (max-width: 420px) {

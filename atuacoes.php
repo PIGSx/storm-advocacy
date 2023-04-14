@@ -1,5 +1,5 @@
 <?php
-include('menu-atuacoes.php');
+include('menu.php');
 ?>
 <html lang="en">
 
@@ -52,29 +52,7 @@ include('menu-atuacoes.php');
                         </div>
                     </div>
                 </div>
-                <div class="grid-item logo-1 logo-2">
-                    <div class="gallery-image">
-                        <img src="img/atuacoes/card/1.jpg" alt="" />
-                        <div class="img-overlay">
-                            <div class="img-description">
-                                <h3>titulo</h3>
-                                <h5>sub</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="grid-item logo-1">
-                    <div class="gallery-image">
-                        <img src="img/atuacoes/card/2.jpg" alt="" />
-                        <div class="img-overlay">
-                            <div class="img-description">
-                                <h3>titulo</h3>
-                                <h5>sub</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item logo-4">
                     <div class="gallery-image">
                         <img src="img/atuacoes/card/2.jpg" alt="" />
                         <div class="img-overlay">
@@ -88,39 +66,6 @@ include('menu-atuacoes.php');
                 <div class="grid-item logo-3">
                     <div class="gallery-image">
                         <img src="img/atuacoes/card/1.jpg" alt="" />
-                        <div class="img-overlay">
-                            <div class="img-description">
-                                <h3>titulo</h3>
-                                <h5>sub</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item logo-4">
-                    <div class="gallery-image">
-                        <img src="img/atuacoes/card/2.jpg" alt="" />
-                        <div class="img-overlay">
-                            <div class="img-description">
-                                <h3>titulo</h3>
-                                <h5>sub</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item logo-3 logo-1">
-                    <div class="gallery-image">
-                        <img src="img/atuacoes/card/1.jpg" alt="" />
-                        <div class="img-overlay">
-                            <div class="img-description">
-                                <h3>titulo</h3>
-                                <h5>sub</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item logo-1 logo-2">
-                    <div class="gallery-image">
-                        <img src="img/atuacoes/card/2.jpg" alt="" />
                         <div class="img-overlay">
                             <div class="img-description">
                                 <h3>titulo</h3>
