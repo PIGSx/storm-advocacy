@@ -165,7 +165,20 @@ img {
 .img-description {
     width: 100%;
 }
-
+.img-overlay a{
+    color: var(--details);
+    font-size: 24px;
+    line-height: 60px;
+    background: var(--color-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+}
 .img-overlay h3 {
     font-weight: 600;
     text-transform: uppercase;

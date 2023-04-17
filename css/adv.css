@@ -31,8 +31,7 @@ body {
     transition: 0.4s background-color;
 }
 
-
-
+/*==== banner/imagem inicial ====*/
 .about {
     display: flex;
     justify-content: space-between;
@@ -186,10 +185,9 @@ body {
     height: 4px;
     left: 50%;
     bottom: -5px;
-    background-image: linear-gradient(to right, rgb(106, 6, 236),#871034);
+    background-image: linear-gradient(to right, rgb(106, 6, 236), #871034);
     transform: translateX(-50%);
 }
-
 
 .timeline .container {
     width: 70%;
@@ -298,8 +296,88 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/*==== slide/aréas ====*/
+header{
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #370f53;
+}
+.slide{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide .container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.slide .card {
+    background: var(--color-white);
+    border-radius: 8px;
+}
+
+.slide .card .image-box {
+    height: 200px;
+}
+
+.slide .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.slide .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+
+.slide .profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.slide .profile-details .area {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-black-light);
+}
+
+.slide .swiper-navBtn {
+    color: var(--details);
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+}
+
+.slide .swiper-navBtn::before,
+.slide .swiper-navBtn::after {
+    font-size: 18px;
+}
+
+.slide .swiper-pagination-bullet {
+    background-color: var(--color-black);
+}
+
+
 @media screen and (max-width:1224px) {
-    .container {
+    .timeline   .container {
         width: 85%;
     }
 }
@@ -351,6 +429,12 @@ body {
 
     .slider {
         margin: 2.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide .swiper-navBtn {
+        display: none;
     }
 }
 
