@@ -34,6 +34,7 @@ include('menu.php');
                     <div class="gallery-image">
                         <img src="img/atuacoes/card/1.jpg" alt="" />
                         <div class="img-overlay">
+                        <a href="adv.php"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
                                 <h3>titulo</h3>
                                 <h5>sub</h5>
@@ -45,6 +46,7 @@ include('menu.php');
                     <div class="gallery-image">
                         <img src="img/atuacoes/card/2.jpg" alt="" />
                         <div class="img-overlay">
+                        <a href="advogados2.php"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
                                 <h3>titulo</h3>
                                 <h5>sub</h5>
@@ -56,6 +58,7 @@ include('menu.php');
                     <div class="gallery-image">
                         <img src="img/atuacoes/card/2.jpg" alt="" />
                         <div class="img-overlay">
+                        <a href="#!"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
                                 <h3>titulo</h3>
                                 <h5>sub</h5>
@@ -67,6 +70,7 @@ include('menu.php');
                     <div class="gallery-image">
                         <img src="img/atuacoes/card/1.jpg" alt="" />
                         <div class="img-overlay">
+                        <a href="#!"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
                                 <h3>titulo</h3>
                                 <h5>sub</h5>
