@@ -177,18 +177,10 @@ include('poup.php');
           </div>
         </a>
       </button>
-
-
-
     </div>
-
-    <div class="cube-image">
-      <div class="cube" id="cube1"></div>
-      <div class="cube" id="cube2"></div>
-      <div class="cube" id="cube3"></div>
-      <div class="cube" id="cube4"></div>
+    <div class="main">
+      <img src="img/atuacoes/png/sa-red.PNG">
     </div>
-
   </section>
   <section class="login">
     <div class="inner-container">
@@ -212,7 +204,7 @@ include('poup.php');
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe
           magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est,
           repellendus et reiciendis.</p>
-          <div class="buttons">
+        <div class="buttons">
           <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
           <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
         </div>
@@ -222,7 +214,7 @@ include('poup.php');
   <section class="feedback section" id="feedback">
     <div class="container">
       <div class="section-header">
-        <h3 class="title" data-title="Oque as pessoas dizem sobre a">advocacy</h3>
+        <h3 class="title" data-title="Oque as pessoas dizem sobre a">SA</h3>
       </div>
 
       <div class="testi-content grid-2">
