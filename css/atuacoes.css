@@ -50,7 +50,35 @@ body {
 .show-container h2 {
     font-size: 2rem;
 }
-
+/*==== about ====*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 250px;
+}
+.col-1 h2{
+    font-size: 2rem;
+    color: var(--color-black);
+}
+.col-1 p{
+    font-size: 1rem;
+    color: var(--color-black-light);
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: var(--details);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
 /*==== cards - areas ====*/
 
 img {
