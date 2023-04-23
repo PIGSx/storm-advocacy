@@ -18,6 +18,12 @@ include('menu.php');
             <h2>áreas de atuação</h2>
         </div>
     </section>
+    <div class="row">
+        <div class="col-1">
+            <h2>Onde atuamos</h2>
+            <p>Nós entendemos o seu negócio e trabalhamos juntos para resolver desafios jurídicos com soluções inovadoras e multidisciplinares, combinando nossa visão global à experiência em mais de 40 práticas do Direito.</p>
+        </div>
+    </div>
     <section class="services section">
         <div class="container">
             <div class="section-body">
