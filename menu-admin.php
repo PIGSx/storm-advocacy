@@ -24,40 +24,34 @@
 			</li>
 			<li>
 				<a href="index.php">
-					<i class='bx bxs-shopping-bag-alt'></i>
+					<i class='bx bx-news'></i>
 					<span class="text">Site</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bxs-doughnut-chart'></i>
+					<i class='bx bx-line-chart'></i>
 					<span class="text">Analytics</span>
 				</a>
 			</li>
 			<li>
 				<a href="https://calendly.com/event_types/user/me" target="_blank">
-				<i class='bx bx-calendar'></i>
+					<i class='bx bx-calendar'></i>
 					<span class="text">Agenda</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-group'></i>
-					<span class="text">Team</span>
 				</a>
 			</li>
 		</ul>
 		<ul class="side-menu">
 			<li>
 				<a href="#" class="logout">
-				<i class='bx bx-log-out'></i>
+					<i class='bx bx-log-out'></i>
 					<span class="text">Logout</span>
 				</a>
 			</li>
 		</ul>
 	</section>
 	<section id="content">
-		<!-- NAVBAR -->
+		<!-- navbar-->
 		<nav>
 			<i class='bx bx-menu'></i>
 			<i class="uil uil-moon toggle-btn"></i>
