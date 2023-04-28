@@ -1,0 +1,147 @@
+body {
+    --color-black: #000;
+    --color-black-light: #777777;
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #3a3757;
+    --back-fundo: #eee;
+}
+
+body.dark {
+    --color-black: #fff;
+    --color-white: #000;
+    --color-light: #777777;
+    --color-black-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #3a3757;
+    --back-fundo: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--back-fundo);
+    transition: 0.4s background-color;
+    overflow-x: hidden;
+}
+
+/* MAIN */
+#content main {
+	width: 100%;
+	padding: 36px 24px;
+	max-height: calc(100vh - 56px);
+	overflow-y: auto;
+}
+
+#content main .table-data {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: #342E37;
+}
+#content main .table-data > div {
+	border-radius: 20px;
+	background: #F9F9F9;
+	padding: 24px;
+	overflow-x: auto;
+}
+#content main .table-data .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+#content main .table-data .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+#content main .table-data .head .bx {
+	cursor: pointer;
+}
+
+#content main .table-data .order {
+	flex-grow: 1;
+	flex-basis: 500px;
+}
+
+#content main .table-data .todo {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background: #e9edf2;
+}
+
+table thead th {
+    padding: 1rem 0rem;
+    text-align: left;
+    color: #444;
+    font-size: .9rem;
+}
+
+table thead th:first-child {
+    padding-left: 1rem;
+}
+
+table tbody td {
+    padding: 1rem 0rem;
+    color: #444;
+}
+
+table tbody td:first-child {
+    padding-left: 1rem;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dee2e8;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+.client-img {
+    margin-right: .5rem;
+    border: 2px solid #b0b0b0;
+    height: 45px;
+    width: 45px;
+}
+
+.client-info h4 {
+    color: #555;
+    font-size: .95rem;
+}
+
+.client-info small {
+    color: #777;
+}
+
+.status {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    background: green;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    font-size: .8rem;
+}
