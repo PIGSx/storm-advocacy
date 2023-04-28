@@ -24,7 +24,7 @@
         </a>
         <ul class="links">
             <li><a class="active" href="index.php">home</a></li>
-            <li><a href="#about">about</a></li>
+            <li><a href="index.php#about">about</a></li>
             <li><a href="atuacoes.php">áreas</a></li>
             <li><a href="#!">contact</a></li>
         </ul>
