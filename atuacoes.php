@@ -38,7 +38,7 @@ include('menu.php');
             <div class="grid">
                 <div class="grid-item logo-4">
                     <div class="gallery-image">
-                        <img src="img/atuacoes/card/1.jpg" alt="" />
+                        <img src="img/atuacoes/card/1.PNG" alt="" />
                         <div class="img-overlay">
                         <a href="adv.php"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
@@ -50,7 +50,7 @@ include('menu.php');
                 </div>
                 <div class="grid-item logo-2">
                     <div class="gallery-image">
-                        <img src="img/atuacoes/card/2.jpg" alt="" />
+                        <img src="img/atuacoes/card/3.PNG" alt="" />
                         <div class="img-overlay">
                         <a href="advogados2.php"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
@@ -62,7 +62,7 @@ include('menu.php');
                 </div>
                 <div class="grid-item logo-1">
                     <div class="gallery-image">
-                        <img src="img/atuacoes/card/2.jpg" alt="" />
+                        <img src="img/atuacoes/card/2.PNG" alt="" />
                         <div class="img-overlay">
                         <a href="#!"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
@@ -74,7 +74,7 @@ include('menu.php');
                 </div>
                 <div class="grid-item logo-3">
                     <div class="gallery-image">
-                        <img src="img/atuacoes/card/1.jpg" alt="" />
+                        <img src="img/atuacoes/card/4.PNG" alt="" />
                         <div class="img-overlay">
                         <a href="#!"><i class="uil uil-external-link-alt"></i></a>
                             <div class="img-description">
