@@ -23,10 +23,10 @@
             <h3>ADVOCACY</h3>
         </a>
         <ul class="links">
-            <li><a class="active" href="index.php">home</a></li>
-            <li><a href="index.php#about">about</a></li>
+            <li><a class="active" href="index.php">início</a></li>
+            <li><a href="about.php">sobre</a></li>
             <li><a href="atuacoes.php">áreas</a></li>
-            <li><a href="#!">contact</a></li>
+            <li><a href="#!">contato</a></li>
         </ul>
         <i class="uil uil-moon toggle-btn"></i>
         <div class="hamburguer-menu-container">
