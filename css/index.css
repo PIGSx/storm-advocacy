@@ -184,7 +184,7 @@ section {
     align-items: center;
 }
 
-.about .main img {
+.about .main video {
     width: 580px;
     max-width: 100%;
     height: auto;
@@ -217,7 +217,7 @@ section {
 
 .all-text h1 {
     color: var(--color-black);
-    font-size: 65px;
+    font-size: 34px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -227,6 +227,64 @@ section {
     color: var(--color-black-light);
     line-height: 30px;
     margin-bottom: 35px;
+}
+
+.about button {
+    z-index: 2;
+    display: block;
+    width: fit-content;
+    height: auto;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+    cursor: pointer;
+    color: var(--color-black);
+}
+
+.about button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: scaleX(0.2) scaleY(0.5) translate(250%, 100%);
+    border-top: solid 2px var(--details);
+    border-left: solid 4px var(--details);
+    transition: all .4s ease-in-out;
+}
+
+.about button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) scaleX(0.2) scaleY(0.5);
+    border-bottom: solid 2px var(--details);
+    border-right: solid 4px var(--details);
+    transition: all .4s ease-in-out;
+}
+
+.about button:hover::before {
+    transform: translate(0%, 0%) scaleX(1) scaleY(1);
+    border-top: solid 1px var(--details);
+    border-left: solid 1px var(--details);
+}
+
+.about button:hover::after {
+    transform: scaleX(1) scaleY(1) translate(0%, 0%);
+    border-bottom: solid 1px var(--details);
+    border-right: solid 1px var(--details);
 }
 
 /*===== detalhes ====*/
@@ -831,6 +889,7 @@ hr {
 /*==== Responsive CSS ====*/
 
 @media only screen and (max-width: 1300px) {
+
     /*===== detalhes ====*/
     .cube-image {
         display: none;
@@ -956,10 +1015,12 @@ hr {
         text-align: center;
         margin-top: 40px;
     }
+
     /*===== atuacoes ====*/
-      .areas .main img {
+    .areas .main img {
         margin-bottom: 35px;
     }
+
     /*==== qualificações ====*/
     .grid {
         gap: 10rem;
@@ -986,10 +1047,12 @@ hr {
 }
 
 @media (max-width: 600px) {
-       /*===== atuacoes ====*/
-       .areas .main img {
+
+    /*===== atuacoes ====*/
+    .areas .main img {
         display: none;
     }
+
     /*===== detalhes ====*/
     .grid-item {
         width: 100%;
