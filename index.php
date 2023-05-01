@@ -85,15 +85,16 @@ include('poup.php');
   </section>
   <section class="about" id="about">
     <div class="main">
-      <img src="img/about/designer.PNG">
+      <video src="mp4/logo/logo-glitch.mp4" autoplay muted loop></video>
+      <!-- <img src="img/about/designer.PNG"> -->
       <div class="all-text">
-        <h4>About <span>US</span></h4>
-        <h1>titulo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+        <h4>Sobre <span>Nós</span></h4>
+        <h1>STORM ADVOCACY</h1>
+        <p>
+          Nós acreditamos que os nossos talentos são os pilares fundamentais do nosso negócio. Por isso, não apenas
+          investimos em desenvolver profissionais qualificados, mas também em formar pessoas com habilidades para
+          enfrentar os desafios do mundo contemporâneo.</p>
+        <a href="about.php"><button>Nossa História</button></a>
       </div>
     </div>
   </section>
