@@ -13,6 +13,8 @@ include('menu.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -37,33 +39,45 @@ include('menu.php');
     </section>
     <section class="texts">
         <div class="container">
-            <div class="main">
+
+            <div class="col-4">
+                <h1>Storm Adocacy</h1>
+                <p>Somos um escritório jurídico multidisciplinar em constante evolução, com 40 anos de
+                    experiência
+                    em oferecer soluções especializadas e contemporâneas para nossos clientes crescerem e
+                    prosperarem em ambientes cada vez mais complexos e desafiadores. Comprometidos com altos
+                    padrões
+                    éticos, nosso atendimento é ágil e de alta qualidade, primando pela confiança,
+                    profissionalismo
+                    e transparência.<br><br>
+                    Contamos com equipes altamente qualificadas em todas as áreas do Direito, mantendo vivos os
+                    valores e a tradição que nos trouxeram até aqui. Além disso, temos correspondentes em todo o
+                    Brasil e relacionamentos estreitos com diversos escritórios de advocacia de primeira linha
+                    em
+                    diferentes países, estando preparados para lidar com questões transnacionais de empresas de
+                    todos os portes, geografias e segmentos.<br><br>
+                    Buscamos estar sempre atentos e prontos para reagir às novas oportunidades, tendências e
+                    desafios, trabalhando com seriedade, conhecimento profundo e respeito aos padrões de
+                    responsabilidade exigidos pela sociedade. Sendo um escritório brasileiro de visão global,
+                    nosso
+                    desafio é compreender o futuro e buscar soluções que atendam às necessidades e anseios de
+                    nossos
+                    clientes.<br><br>
+                    Acreditamos que o Direito aprimora os negócios e a sociedade, e por isso buscamos exercê-lo
+                    com
+                    excelência e respeito ao próximo. Nossos valores fundamentais, juntamente com nossa
+                    estrutura
+                    robusta de governança e visão institucional, nos tornam um escritório jurídico confiável e
+                    preparado para enfrentar desafios cada vez maiores.</p>
+            </div>
+            <div class="col-3">
                 <img src="img/about/reconhecimento/wallpaper.jpg">
-                <div class="all-text">
-                    <h1>Storm Adocacy</h1>
-                    <p>Somos um escritório jurídico multidisciplinar em constante evolução, com 40 anos de experiência
-                        em oferecer soluções especializadas e contemporâneas para nossos clientes crescerem e
-                        prosperarem em ambientes cada vez mais complexos e desafiadores. Comprometidos com altos padrões
-                        éticos, nosso atendimento é ágil e de alta qualidade, primando pela confiança, profissionalismo
-                        e transparência.<br><br>
-                        Contamos com equipes altamente qualificadas em todas as áreas do Direito, mantendo vivos os
-                        valores e a tradição que nos trouxeram até aqui. Além disso, temos correspondentes em todo o
-                        Brasil e relacionamentos estreitos com diversos escritórios de advocacia de primeira linha em
-                        diferentes países, estando preparados para lidar com questões transnacionais de empresas de
-                        todos os portes, geografias e segmentos.<br><br>
-                        Buscamos estar sempre atentos e prontos para reagir às novas oportunidades, tendências e
-                        desafios, trabalhando com seriedade, conhecimento profundo e respeito aos padrões de
-                        responsabilidade exigidos pela sociedade. Sendo um escritório brasileiro de visão global, nosso
-                        desafio é compreender o futuro e buscar soluções que atendam às necessidades e anseios de nossos
-                        clientes.<br><br>
-                        Acreditamos que o Direito aprimora os negócios e a sociedade, e por isso buscamos exercê-lo com
-                        excelência e respeito ao próximo. Nossos valores fundamentais, juntamente com nossa estrutura
-                        robusta de governança e visão institucional, nos tornam um escritório jurídico confiável e
-                        preparado para enfrentar desafios cada vez maiores.</p>
-                </div>
             </div>
         </div>
         <div class="row">
+            <div class="col-2">
+                <img src="img/about/reconhecimento/1.png" id="banner">
+            </div>
             <div class="col-1">
                 <h1>Tradição em inovação</h1>
                 <p>Com quatro décadas de atuação e clientes atendidos em mais de 80 países, desenvolvemos uma cultura
@@ -81,9 +95,6 @@ include('menu.php');
                     <li class="btn"></li>
                     <li class="btn"></li>
                 </ul>
-            </div>
-            <div class="col-2">
-                <img src="img/about/reconhecimento/1.png" id="banner">
             </div>
 
             <script>
@@ -173,6 +184,7 @@ include('menu.php');
         </div>
     </footer>
     <script src="js/dark.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
