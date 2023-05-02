@@ -32,7 +32,7 @@ include('poup.php');
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
-      <a href="#">Read More</a>
+      <a href="error.php">Read More</a>
     </div>
     <div class="content">
       <h1>bla<br><span>ble</span></h1>
@@ -41,7 +41,7 @@ include('poup.php');
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
-      <a href="#">Read More</a>
+      <a href="error.php">Read More</a>
     </div>
     <div class="content">
       <h1>bla<br><span>ble</span></h1>
@@ -50,7 +50,7 @@ include('poup.php');
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
-      <a href="#">Read More</a>
+      <a href="error.php">Read More</a>
     </div>
     <div class="content">
       <h1>bla<br><span>ble</span></h1>
@@ -59,7 +59,7 @@ include('poup.php');
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
-      <a href="#">Read More</a>
+      <a href="error.php">Read More</a>
     </div>
     <div class="content">
       <h1>bla<br><span>ble</span></h1>
@@ -68,12 +68,12 @@ include('poup.php');
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
-      <a href="#">Read More</a>
+      <a href="error.php">Read More</a>
     </div>
     <div class="media-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="error.php"><i class="fab fa-facebook-f"></i></a>
+      <a href="error.php"><i class="fab fa-instagram"></i></a>
+      <a href="error.php"><i class="fab fa-twitter"></i></a>
     </div>
     <div class="slider-navigation">
       <div class="nav-btn active"></div>
