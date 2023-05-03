@@ -16,6 +16,8 @@ include('poup.php');
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <!-- slider -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- alert -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 
 <body class="dark">
@@ -188,9 +190,14 @@ include('poup.php');
       <h1>Receba nossas atualizações jurídicas</h1>
       <p>Para ler onde e quando quiser. Selecione os temas de interesse e cadastre-se preenchendo os campos
         obrigatórios.</p>
-      <div class="button">
-      </div>
+      <a class="fancy" onclick="alert()">
+        <span class="top-key"></span>
+        <span class="text">login</span>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+      </a>
     </div>
+    <script src="js/alert.js"></script>
   </section>
   <section class="app" id="app">
     <h1 class="heading"> storm app</h1>
@@ -396,8 +403,11 @@ include('poup.php');
   <script src="js/home.js"></script>
   <script src="js/dark.js"></script>
   <script src="js/details.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/feedback.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+
 </body>
 
 </html>
