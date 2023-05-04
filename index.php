@@ -197,7 +197,6 @@ include('poup.php');
         <span class="bottom-key-2"></span>
       </a>
     </div>
-    <script src="js/alert.js"></script>
   </section>
   <section class="app" id="app">
     <h1 class="heading"> storm app</h1>
@@ -404,6 +403,7 @@ include('poup.php');
   <script src="js/dark.js"></script>
   <script src="js/details.js"></script>
   <script src="js/feedback.js"></script>
+  <script src="js/alert.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
