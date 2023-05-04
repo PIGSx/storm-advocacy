@@ -7,9 +7,9 @@ function alert() {
       denyButtonText: `pessoa jurídica`,
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.href = "./formulario/register.php";
+        window.location.href = "./formularios/register.php";
       } else if (result.isDenied) {
-        window.location.href = "./formularioAdv/registerAdv.php";
+        window.location.href = "./formularios/registerJ.php";
       }
     })
   }
