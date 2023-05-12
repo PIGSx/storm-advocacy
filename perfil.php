@@ -13,94 +13,105 @@ include('menu.php');
 
 <body class="dark">
     <main>
-    <div class="containers">
+        <?php
+        require('connect.php');
+        if ($_SESSION['login'] == true) {
+            $perfils = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente` WHERE `cadastro_login_cliente` = '$_SESSION[nome]'");
+        } else if ($_SESSION['login'] == false) {
+            $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `tb_cliente_juridico`= '$_SESSION[nome]'");
+        }
+        $perfil = mysqli_fetch_array($perfils);
+        echo "<div class=containers>";
 
-        <!--  User Main-Profile  -->
-        <section class="userProfile card">
-            <div class="profile">
-                <figure><img src="img/perfil/69.png" alt="profile" width="250px" height="250px"></figure>
-            </div>
-        </section>
+        echo   "<section class=userProfile card>";
+        echo       "<div class=profile>";
+        echo       "<figure><img src=img/perfil/69.png alt=profile width=250px height250px></figure>";
+        echo "</div>";
+        echo "</section>";
 
-        <!--  Work & Skills Section -->
-        <section class="information card">
+        //informacoes do usuario
+        echo "<section class=information card>";
+        echo "<div class=info>";
+        echo  " <div class=contact_Info>";
+        echo   "<h1 class=heading>Informações de contato</h1>";
+        echo "<ul>";
+        echo "<li class=phone>";
+        echo  "<h1 class=label>Celular:</h1>";
+        echo "<span class=desc>(11) 96666-6666</span>";
+        echo "</li>";
 
-            <!--  Work Contaienr  -->
-            <div class="info">
-                <div class="contact_Info">
-                    <h1 class="heading">Informações de contato</h1>
-                    <ul>
-                        <li class="phone">
-                            <h1 class="label">Celular:</h1>
-                            <span class="desc">(11) 96666-6666</span>
-                        </li>
+        echo     "<li class=address>";
+        echo         "<h1 class=label>endereço:</h1>";
+        echo         "<span class=desc>Brazuca, ZL</span>";
+        echo     "</li>";
+        echo    "<li class=email>";
+        echo      "<h1 class=label>E-mail:</h1>";
+        echo     "<span class=desc>storm@storm.com</span>";
+        echo "</li>";
 
-                        <li class="address">
-                            <h1 class="label">endereço:</h1>
-                            <span class="desc">Brazuca, ZL</span>
-                        </li>
+        echo     "<li class=site>";
+        echo        "<h1 class=label>Site:</h1>";
+        echo        "<span class=desc>www.storm.com</span>";
+        echo      "</li>";
+        echo   "</ul>";
+        echo    ' <a href=logoff.php>';
+        echo        '<button class="exit"><ion-icon name="exit-outline"></ion-icon>';
+        echo            ' <i class="fas fa-fingerprint"></i>';
+        echo     '    </button>';
+        echo         '</a>';
+        echo       "</div>";
+        echo     "</div>";
+        echo  "</section>";
 
-                        <li class="email">
-                            <h1 class="label">E-mail:</h1>
-                            <span class="desc">storm@storm.com</span>
-                        </li>
+        //detalhes do usuario
+        echo  "<section class=userDetails card>";
+        echo     "<div class=userName>";
+        echo         "<h1 class=name>og.pigs</h1>";
+        echo         "<p>produtor audiovisual</p>";
+        echo     "</div>";
+        echo    "<div class=btns>";
+        echo        "<ul>";
+        echo            "<li class=sendMsg>";
+        ' <i class="ri-chat-4-fill ri"></i>';
+        echo                ' <a href="#">enviar menssagem</a>';
+        echo            "</li>";
 
-                        <li class="site">
-                            <h1 class="label">Site:</h1>
-                            <span class="desc">www.storm.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--  User Details Sections  -->
-        <section class="userDetails card">
-            <div class="userName">
-                <h1 class="name">og.pigs</h1>
-                <p>produtor audiovisual</p>
-            </div>
-            <div class="btns">
-                <ul>
-                    <li class="sendMsg">
-                        <i class="ri-chat-4-fill ri"></i>
-                        <a href="#">enviar menssagem</a>
-                    </li>
-
-                    <li class="sendMsg active">
-                        <i class="ri-check-fill ri"></i>
-                        <a href="#">contato</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        echo            "<li class=sendMsg active>";
+        echo                '<i class="ri-check-fill ri"></i>';
+        echo              '  <a href="#">contato</a>';
+        echo            "</li>";
+        echo       "</ul>";
+        echo    "</div>";
+        echo "</section>";
 
 
-        <!-- Timeline & About Sections  -->
-        <section class="timeline_about card">
-            <div class="tabs">
-                <ul>
-                    <li class="about active">
-                        <i class="ri-user-3-fill ri"></i>
-                        <span>atualizações</span>
-                    </li>
-                </ul>
-            </div>
+        //area informativa
+        echo      "<section class=timeline_about card>";
+        echo       "<div class=tabs>";
+        echo         "<ul>";
+        echo                        "<li class=about active>";
+        echo                ' <i class="ri-user-3-fill ri"></i>';
+        echo                 "<span>atualizações</span>";
+        echo           " </li>";
+        echo       " </ul>";
+        echo   "</div>";
 
-            <div class="contact_Info">
-                <ul>
-                    <li class="phone">
-                        <h1 class="label">caso:</h1>
-                        <span class="info">69</span>
-                    </li>
+        echo    "<div class=contact_Info>";
+        echo       " <ul>";
+        echo           "<li class=phone>";
+        echo              "<h1 class=label>caso:</h1>";
+        echo              "<span class=info>69</span>";
+        echo          "</li>";
 
-                    <li class="address">
-                        <h1 class="label">status:</h1>
-                        <span class="info">quase bom mané</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
+        echo        "<li class=address>";
+        echo            "<h1 class=label>status:</h1>";
+        echo          "<span class=info>quase bom mané</span>";
+        echo       "</li>";
+        echo  "</ul>";
+        echo   "</div>";
+        echo    "</section>";
+        echo   "</div>";
+        ?>
     </main>
     <script src="js/dark.js"></script>
 </body>
