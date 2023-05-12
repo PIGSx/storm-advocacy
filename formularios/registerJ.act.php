@@ -4,8 +4,8 @@
  extract($_FILES);
  require('connect.php');
 
-if(mysqli_query($con,"INSERT INTO `cadastro_login_cliente` (`cod`, `nome`, `email`, `celular`, `endereco`, `cidade`, `senha`, `cpf`) 
-VALUES (NULL, '$nome', '$email', '$celular', '$endereco', '$cidade', '$senha', '$cpf');")){
+if(mysqli_query($con,"INSERT INTO `tb_cliente_juridico` (`cod`, `nome`, `email`, `celular`, `endereco`, `cidade`, `senha`, `cnpj`)
+ VALUES (NULL, '$nome', '$email', '$celular', '$endereco', '$cidade', '$senha', '$cnpj');")){
     $msg = "<p class=sucesso>Registro criado com sucesso!</p>";
     } else{
     $msg = "<p class=erro>Errou, tente novamente!</p>";
@@ -13,4 +13,4 @@ VALUES (NULL, '$nome', '$email', '$celular', '$endereco', '$cidade', '$senha', '
      session_start();
           $_SESSION['msg']=$msg;
           
-header("location:register.php");
+header("location:registerJ.php");
