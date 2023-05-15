@@ -9,16 +9,19 @@ include('menu.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>your profile</title>
     <link rel="stylesheet" href="css/perfil.css">
+     <!-- icon -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body class="dark">
     <main>
         <?php
+
         require('connect.php');
         if ($_SESSION['login'] == true) {
-            $perfils = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente` WHERE `cadastro_login_cliente` = '$_SESSION[nome]'");
+            $perfils = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente` WHERE `cadastro_login_cliente`.`cod` = '$_SESSION[cod]'");
         } else if ($_SESSION['login'] == false) {
-            $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `tb_cliente_juridico`= '$_SESSION[nome]'");
+            $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `tb_cliente_juridico`.`cod`= '$_SESSION[cod]'");
         }
         $perfil = mysqli_fetch_array($perfils);
         echo "<div class=containers>";
@@ -37,27 +40,28 @@ include('menu.php');
         echo "<ul>";
         echo "<li class=phone>";
         echo  "<h1 class=label>Celular:</h1>";
-        echo "<span class=desc>(11) 96666-6666</span>";
+        echo "<span class=desc>$perfil[celular]</span>";
         echo "</li>";
 
         echo     "<li class=address>";
         echo         "<h1 class=label>endereço:</h1>";
-        echo         "<span class=desc>Brazuca, ZL</span>";
+        echo         "<span class=desc>$perfil[endereco]</span>";
         echo     "</li>";
         echo    "<li class=email>";
         echo      "<h1 class=label>E-mail:</h1>";
-        echo     "<span class=desc>storm@storm.com</span>";
+        echo     "<span class=desc>$perfil[email]</span>";
         echo "</li>";
 
         echo     "<li class=site>";
-        echo        "<h1 class=label>Site:</h1>";
-        echo        "<span class=desc>www.storm.com</span>";
+        echo        "<h1 class=label>CPF/CNPJ:</h1>";
+        echo        "<span class=desc>$perfil[cpf]</span>";
+        echo        "<span class=desc>$perfil[cnpj]</span>";
         echo      "</li>";
         echo   "</ul>";
         echo    ' <a href=logoff.php>';
-        echo        '<button class="exit"><ion-icon name="exit-outline"></ion-icon>';
-        echo            ' <i class="fas fa-fingerprint"></i>';
-        echo     '    </button>';
+        echo        '<button class="exit">
+        <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+        <div class="text">Logout</div></button>';
         echo         '</a>';
         echo       "</div>";
         echo     "</div>";
@@ -66,14 +70,14 @@ include('menu.php');
         //detalhes do usuario
         echo  "<section class=userDetails card>";
         echo     "<div class=userName>";
-        echo         "<h1 class=name>og.pigs</h1>";
+        echo         "<h1 class=name>$perfil[nome]</h1>";
         echo         "<p>produtor audiovisual</p>";
         echo     "</div>";
         echo    "<div class=btns>";
         echo        "<ul>";
         echo            "<li class=sendMsg>";
-        ' <i class="ri-chat-4-fill ri"></i>';
-        echo                ' <a href="#">enviar menssagem</a>';
+        echo                '<i class="ri-chat-4-fill ri"></i>';
+        echo                ' <a href="#">alterar dados</a>';
         echo            "</li>";
 
         echo            "<li class=sendMsg active>";
