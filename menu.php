@@ -66,6 +66,7 @@
         echo     "<ul class=icons>";
         echo  "<div class=icons>";
         echo  '<i class="uil uil-moon toggle-btn"></i>';
+        echo   '<a href=./formularios/login.php><i class="uil uil-signin"></i></a>';
         echo "</div>";
         echo "</ul>";
         echo  "<div class=hamburguer-menu-container>";
