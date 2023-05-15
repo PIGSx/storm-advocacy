@@ -1,4 +1,6 @@
-<?php @session_start(); ?>
+<?php
+@session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +11,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    <!-- alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
     <title>Login</title>
 </head>
 
@@ -48,12 +52,30 @@
                 <div class="col-12">
                     <img src="img/storm (roxo).png" class="img-fluid">
                     <div class="col-12" id="link-container">
-                        <a href="register.php">Ainda não tenho cadastro</a>
+                        <a class="cad" onclick="alert()">ainda não tem uma conta??</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function alert() {
+            Swal.fire({
+                title: 'como você gostaria de se registrar?',
+                showDenyButton: true,
+                showCloseButton: true,
+                confirmButtonText: 'pessoa física',
+                denyButtonText: `pessoa jurídica`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "register.php";
+                } else if (result.isDenied) {
+                    window.location.href = "registerJ.php";
+                }
+            })
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>

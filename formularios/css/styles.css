@@ -1,3 +1,4 @@
+
 body{
     background-color:#a197a3 !important;
 }
@@ -57,7 +58,11 @@ body{
     background-color: #6b077f;
     border-color: #6b077f;
 }
-
+.cad{
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
 @media(max-width: 768px){
     .btn.btn-primary{
         width: auto;
