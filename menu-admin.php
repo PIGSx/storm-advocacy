@@ -19,7 +19,19 @@
 			<li class="active">
 				<a href="admin-dash.php">
 					<i class='bx bxs-dashboard'></i>
-					<span class="text">Dashboard</span>
+					<span class="text">Cliente Fisico</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="clienteJ.php">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Cliente Juridico</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="admin-dash.php">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">ADMNS e ADVOGADOS</span>
 				</a>
 			</li>
 			<li>
@@ -43,10 +55,12 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#" class="logout">
-					<i class='bx bx-log-out'></i>
-					<span class="text">Logout</span>
-				</a>
+				<?php
+				echo	'<a href=logoff.php class=logout>';
+				echo	"<i class='bx bx-log-out'></i>";
+				echo "<span class=text>Logout</span>";
+				echo "</a>";
+				?>
 			</li>
 		</ul>
 	</section>

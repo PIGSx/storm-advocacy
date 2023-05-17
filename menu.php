@@ -38,7 +38,11 @@
         echo     "<ul class=icons>";
         echo  "<div class=icons>";
         echo  '<i class="uil uil-moon toggle-btn"></i>';
-        echo   '<a href=perfil.php><i class="uil uil-user"></i></a>';
+        if ($_SESSION['login'] === true && $_SESSION['email'] == "storm.advocacy@gmail.com") {
+            echo   '<a href=admin-dash.php><i class="uil uil-user"></i></a>';
+        } else {
+            echo   '<a href=perfil.php><i class="uil uil-user"></i></a>';
+        }
         echo "</div>";
         echo "</ul>";
         echo  "<div class=hamburguer-menu-container>";
@@ -79,6 +83,8 @@
         echo "</div>";
     }
     ?>
+
+
     <script src="js/menu.js"></script>
 </body>
 

@@ -1,33 +1,4 @@
-body {
-    --color-black: #000;
-    --color-black-light: #777777;
-    --color-white: #fff;
-    --color-light: #F9F9F9;
-    --details: #871034;
-    --back-primary: #3a3757;
-    --back-fundo: #eee;
-}
-
-body.dark {
-    --color-black: #fff;
-    --color-white: #000;
-    --color-light: #161b15;
-    --color-black-light: #f4f4f4;
-    --details: #871034;
-    --back-primary: #3a3757;
-    --back-fundo: #161b15;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-	list-style: none;
-    font-family: 'Montserrat', sans-serif;
-}
-
+@import "var.css";
 
 #sidebar {
 	position: fixed;

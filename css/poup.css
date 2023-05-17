@@ -1,18 +1,4 @@
-:root {
-    --color-black: #000;
-    --color-white: #fff;
-    --color-light: #f4f4f4;
-    --details: #871034;
-    --back-primary: #3a3757;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
+@import "var.css";
 
 body {
     min-height: 100vh;
