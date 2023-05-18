@@ -49,6 +49,14 @@
                         <label for="genero" class="form-label">genero<label>
                     </div>
                     <div class="form-floating mb-3">
+                        <input type="text" class="form-control"  name="cargo" placeholder="Digite seu cargo">
+                        <label for="genero" class="form-label">cargo<label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control"  name="status" placeholder="status atual">
+                        <label for="genero" class="form-label">status<label>
+                    </div>
+                    <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="password" name="senha" placeholder="Crie sua senha">
                         <label for="senha" class="form-label">Crie sua senha<label>
                     </div>

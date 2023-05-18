@@ -4,8 +4,8 @@
  extract($_FILES);
  require('connect.php');
 
-if(mysqli_query($con,"INSERT INTO `tb_advogado` (`cod`, `nome`, `email`, `celular`, `dataNascimento`, `cpf`, `genero`, `senha`) 
-VALUES (NULL, '$nome', '$email', '$celular', '$data', '$cpf', '$genero', '$senha');")){
+if(mysqli_query($con,"INSERT INTO `tb_advogado` (`cod`, `nome`, `email`, `celular`, `dataNascimento`, `cpf`, `genero`,`cargo`, `status`, `senha`) 
+VALUES (NULL, '$nome', '$email', '$celular', '$data', '$cpf', '$genero','$cargo', '$status', '$senha');")){
     $msg = "<p class=sucesso>Registro criado com sucesso!</p>";
     } else{
     $msg = "<p class=erro>Errou, tente novamente!</p>";
