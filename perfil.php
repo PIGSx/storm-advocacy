@@ -77,7 +77,7 @@ include('menu.php');
         echo        "<ul>";
         echo            "<li class=sendMsg>";
         echo                '<i class="ri-chat-4-fill ri"></i>';
-        echo                ' <a href="#">alterar dados</a>';
+        echo                ' <a href="./formularios/alterar-cliente.php">alterar dados</a>';
         echo            "</li>";
 
         echo            "<li class=sendMsg active>";
