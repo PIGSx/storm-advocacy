@@ -18,11 +18,11 @@ include('menu-admin.php');
         <main>
             <?php
             require('connect.php');
-            $perfis = mysqli_query($con, "SELECT * FROM `tb_advogado`");
+            $admins = mysqli_query($con, "SELECT * FROM `tb_advogado`");
             echo   "<div class=table-data>";
             echo    "<div class=order>";
             echo      "<div class=head>";
-            echo          " <h3>Nossos Clientes</h3>";
+            echo          " <h3>Responsáveis</h3>";
             echo            "<i class='bx bx-search'></i>";
             echo            "<i class='bx bx-filter'></i>";
             echo       "</div>";
@@ -30,26 +30,31 @@ include('menu-admin.php');
             echo              "<thead>";
             echo                "<tr>";
             echo                     "<th>#</th>";
-            echo                    "<th></span>CLIENTE</th>";
-            echo                    "<th></span>CPF</th>";
+            echo                    "<th></span>USUÁRIO</th>";
+            echo                    "<th></span>CARGO</th>";
             echo                  "<th></span>STATUS</th>";
-            while($perfil = mysqli_fetch_array($perfis)){
+            echo                  "<th></span>DADOS</th>";
+            while($admin = mysqli_fetch_array($admins)){
             echo             "</tr>";
             echo        "</thead>";
             echo        "<tbody>";
             echo          "<tr>";
-            echo              "<td class=cod>$perfil[cod]</td>";
+            echo              "<td class=cod>$admin[cod]</td>";
             echo             "<td>";
             echo   "<div class=client>";
             echo   "<div class=client-info>";
-            echo  "<h4>$perfil[nome]</h4>";
-            echo  "<small>$perfil[email]</small>";
+            echo  "<h4>$admin[nome]</h4>";
+            echo  "<small>$admin[email]</small>";
             echo   "</div>";
             echo  "</div>";
             echo  "</td>";
-            echo  "<td>$perfil[cpf]</td>";
+            echo  "<td>$admin[cargo]</td>";
             echo  "<td>";
-            echo  "<span class=status>ativo</span>";
+            echo  "<span class=status>$admin[status]</span>";
+            echo "</td>";
+            echo  "<td>";
+            echo  '<a href=./formularios/alterar-adv.php><i class="uil uil-edit"></i></a>';
+            echo  '<a href=./formularios/#!><i class="uil uil-trash-alt"></i></a>';
             echo "</td>";
         }
             echo  "</tr>";
