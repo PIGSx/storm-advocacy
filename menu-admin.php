@@ -22,14 +22,14 @@
 					<span class="text">Cliente Fisico</span>
 				</a>
 			</li>
-			<li class="active">
+			<li>
 				<a href="clienteJ.php">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Cliente Juridico</span>
 				</a>
 			</li>
-			<li class="active">
-				<a href="admin-dash.php">
+			<li>
+				<a href="adv-admin.php">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">ADMNS e ADVOGADOS</span>
 				</a>
