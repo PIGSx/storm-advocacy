@@ -14,46 +14,22 @@
 <body>
 
     <?php
-    @session_start();
+    $cod = $_GET['cod'];
     require('connect.php');
-    $admins = mysqli_query($con, "SELECT * FROM `tb_advogado` WHERE `tb_advogado`.`cod` = '$_SESSION[cod]'");
+    $admins = mysqli_query($con, "SELECT * FROM `tb_advogado` WHERE `tb_advogado`= '$cod'");
     $admin = mysqli_fetch_array($admins);
     ?>
 
-    <div class="container col-11 col-md-9 mt-4" id="form-container">
+    <div class="container col-11 col-md-9 mt-4" id="form-container" >
         <div class="row gx-5">
             <div class="col-md-6">
                 <h2>ADVOGADO</h2>
                 <form action="alterar-adv.act.php" method="post">
-                    <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="nome" placeholder="Digite seu nome" value="<?php echo $admin['nome']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="email" placeholder="Digite seu email" value="<?php echo $admin['email']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <p><input type="number" class="form-control" name="celular" placeholder="Digite seu celular" value="<?php echo $admin['celular']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <p><input type="date" class="form-control" id="last-name" name="data" placeholder="digite sua data de nascimento" value="<?php echo $admin['data']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="cpf" placeholder="Digite seu cpf" value="<?php echo $admin['cpf']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="genero" placeholder="Digite seu genero" value="<?php echo $admin['genero']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
+                <div class="form-floating mb-3">
                         <p><input type="text" class="form-control" name="cargo" placeholder="Digite seu cargo" value="<?php echo $admin['cargo']?>"></p>
                     </div>
                     <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="status" placeholder="Status atual" value="<?php echo $admin['status']?>"></p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <p><input type="password" class="form-control" id="password" name="senha" placeholder="Atualize sua senha" value="<?php echo $admin['senha']?>"></p>
-                    </div>
-                    <div>
-
+                    <p><input type="text" class="form-control"name="status" placeholder="Digite seus status" value="<?php echo $admin['status']?>"></p> 
                     </div>
                     <input type="submit" class="btn btn-primary" value="alterar">
                 </form>
