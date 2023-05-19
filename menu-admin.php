@@ -31,7 +31,7 @@
 			<li>
 				<a href="adv-admin.php">
 					<i class='bx bxs-dashboard'></i>
-					<span class="text">ADMNS e ADVOGADOS</span>
+					<span class="text">Admins e Advogados</span>
 				</a>
 			</li>
 			<li>

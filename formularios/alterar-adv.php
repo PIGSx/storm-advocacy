@@ -16,20 +16,20 @@
     <?php
     $cod = $_GET['cod'];
     require('connect.php');
-    $admins = mysqli_query($con, "SELECT * FROM `tb_advogado` WHERE `tb_advogado`= '$cod'");
+    $admins = mysqli_query($con, "SELECT * FROM `tb_advogado` WHERE `tb_advogado`.`cod`= '$cod'");
     $admin = mysqli_fetch_array($admins);
     ?>
 
-    <div class="container col-11 col-md-9 mt-4" id="form-container" >
+    <div class="container col-11 col-md-9 mt-4" id="form-container">
         <div class="row gx-5">
             <div class="col-md-6">
                 <h2>ADVOGADO</h2>
                 <form action="alterar-adv.act.php" method="post">
-                <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="cargo" placeholder="Digite seu cargo" value="<?php echo $admin['cargo']?>"></p>
+                    <div class="form-floating mb-3">
+                        <p><input type="text" class="form-control" name="cargo" placeholder="Digite seu cargo" value="<?php echo $admin['cargo'] ?>"></p>
                     </div>
                     <div class="form-floating mb-3">
-                    <p><input type="text" class="form-control"name="status" placeholder="Digite seus status" value="<?php echo $admin['status']?>"></p> 
+                        <p><input type="text" class="form-control" name="status" placeholder="Digite seus status" value="<?php echo $admin['status'] ?>"></p>
                     </div>
                     <input type="submit" class="btn btn-primary" value="alterar">
                 </form>

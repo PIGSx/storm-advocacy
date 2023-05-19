@@ -53,8 +53,8 @@ include('menu-admin.php');
             echo  "<span class=status>$admin[status]</span>";
             echo "</td>";
             echo  "<td>";
-            echo  '<a href=./formularios/alterar-adv.php><i class="uil uil-edit"></i></a>';
-            echo  '<a href=./formularios/#!><i class="uil uil-trash-alt"></i></a>';
+            echo  "<a href=./formularios/alterar-adv.php?cod=$admin[cod]><i class='uil uil-edit'></i></a>";
+            echo  "<a href=javascript:confirmar($admin[cod])><i class='uil uil-trash-alt'></i></a>";
             echo "</td>";
         }
             echo  "</tr>";
@@ -64,7 +64,14 @@ include('menu-admin.php');
             ?>
         </main>
     </section>
-
+    <script>
+        function confirmar (codigo){
+            resposta = confirm ("deseja excluir o registro"+codigo+"?");
+            if(resposta == true){
+                window.location = "excluir.php?cod="+codigo;
+            }
+        }
+    </script>
     <script src="js/dark.js"></script>
 </body>
 
