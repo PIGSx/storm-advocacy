@@ -43,17 +43,11 @@ section {
 }
 
 .home .content h1 {
-    font-size: 4em;
+    font-size: 1.6em;
     font-weight: 900;
-    text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 75px;
-    margin-bottom: 40px;
-}
-
-.home .content h1 span {
-    font-size: 1.2em;
-    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .home .content p {
