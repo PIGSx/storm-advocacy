@@ -69,7 +69,7 @@
             <div class="col-6 mt-4">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <img src="img/storm (roxo).png" class="img-fluid">
+                        <img src="../img/atuacoes/png/sa-red.PNG" class="img-fluid">
                     </div>
                     <div class="col-12" id="link-container">
                         <a href="login.php">Eu já tenho uma conta</a>

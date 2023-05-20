@@ -50,7 +50,7 @@
             <!--div da imagem-->
             <div class="col-md-6 order-md-1">
                 <div class="col-12">
-                    <img src="img/storm (roxo).png" class="img-fluid">
+                    <img src="../img/atuacoes/png/sa-red.PNG" class="img-fluid">
                     <div class="col-12" id="link-container">
                         <a class="cad" onclick="alert()">ainda não tem uma conta??</a>
                     </div>
