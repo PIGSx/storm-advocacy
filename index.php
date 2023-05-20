@@ -11,7 +11,7 @@ include('poup.php');
   <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
   <link rel="stylesheet" href="css/index.css">
   <!-- icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- icon -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <!-- slider -->
@@ -23,54 +23,33 @@ include('poup.php');
 <body class="dark">
   <section class="home">
     <video class="video-slide active" src="mp4/home/reuniao.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="mp4/home/code.mp4" autoplay muted loop></video>
     <video class="video-slide" src="mp4/home/digitando.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="mp4/home/r.png" autoplay muted loop></video>
     <video class="video-slide" src="mp4/home/mulher-andando.mp4" autoplay muted loop></video>
     <div class="content active">
-      <h1>bla<br><span>ble</span></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <a href="error.php">Read More</a>
+      <h1>Orientação Jurídica Personalizada para Você</h1>
+      <p>Com um compromisso inabalável, trabalhamos com afinco para entender as necessidades individuais de cada cliente e oferecer orientação jurídica sólida e personalizada. </p>
+      <?php
+    @session_start();
+    // @var_dump($_SESSION);
+    if (!isset($_SESSION['login'])) {
+        $_SESSION['login'] = false;
+    }
+    if ($_SESSION['login'] === true) {
+      echo   '<a href=contato.php>Contato</a>';
+    } else {
+        echo   "<a href=error.php>Contato</a>";
+    }
+      ?> 
     </div>
     <div class="content">
-      <h1>bla<br><span>ble</span></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <a href="error.php">Read More</a>
+      <h1>Sempre Atualizados e Informados</h1>
+      <p> Nossa dedicação em acompanhar de perto as pesquisas e desenvolvimentos no campo do direito nos permite oferecer soluções estratégicas e eficazes para atender às necessidades específicas de cada cliente.</p>
+      <a href="atuacoes.php">áreas</a>
     </div>
     <div class="content">
-      <h1>bla<br><span>ble</span></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <a href="error.php">Read More</a>
-    </div>
-    <div class="content">
-      <h1>bla<br><span>ble</span></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <a href="error.php">Read More</a>
-    </div>
-    <div class="content">
-      <h1>bla<br><span>ble</span></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <a href="error.php">Read More</a>
+      <h1>Mundo em Evolução</h1>
+      <p>No mundo atual, onde as demandas profissionais estão em constante evolução, a produtividade, flexibilidade e proatividade se tornaram fundamentais para o sucesso. </p>
+      <a href="about.php">sobre</a>
     </div>
     <div class="media-icons">
       <a href="error.php"><i class="fab fa-facebook-f"></i></a>
@@ -79,8 +58,6 @@ include('poup.php');
     </div>
     <div class="slider-navigation">
       <div class="nav-btn active"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
       <div class="nav-btn"></div>
       <div class="nav-btn"></div>
     </div>
@@ -170,148 +147,146 @@ include('poup.php');
         </p>
         <p>S-ADVOCACY é a ferramenta definitiva para advogados modernos que desejam simplificar sua rotina e aumentar sua produtividade. Nosso aplicativo oferece uma variedade de recursos inteligentes e intuitivos, projetados para otimizar sua prática jurídica e fornecer uma experiência aprimorada para você e seus clientes.</p>
         <div class="buttons">
-          <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
-          <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+          <a href="error.php" class="btn"> <i class="fab fa-apple"></i> app store </a>
+          <a href="error.php" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
         </div>
       </div>
     </div>
   </section>
-  <section class="feedback section" id="feedback">
-    <div class="container">
-      <div class="section-header">
-        <h3 class="title" data-title="Oque as pessoas dizem sobre a">SA</h3>
-      </div>
+  <header id="show-review">
+    <section class="feedback section" id="feedback">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Oque as pessoas dizem sobre a">SA</h3>
+        </div>
 
-      <div class="testi-content grid-2">
-        <div class="column-1 reviews">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide review">
-                <i class="fas fa-quote-left quote"></i>
-                <div class="rate">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+        <div class="testi-content grid-2">
+          <div class="column-1 reviews">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Ótima empresa, super atenciosos e prestam um serviço de qualidade!
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">kylie</h3>
+                    <h5 class="review-job">model, CAN</h5>
+                  </div>
                 </div>
 
-                <p class="review-text">
-                  Ótima empresa, super atenciosos e prestam um serviço de qualidade!
-                </p>
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
 
-                <div class="review-info">
-                  <h3 class="review-name">kylie</h3>
-                  <h5 class="review-job">model, CAN</h5>
+                  <p class="review-text">
+                    Sabe quando você está perdida e não sabe oque fazer? eu estava assim até conhecer a storm.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Talita Oliveira</h3>
+                    <h5 class="review-job">CEO of Drope Sneakers, EUA</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Fortaleceram muito na criação do sistema para barbearia.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Diego Acelino</h3>
+                    <h5 class="review-job">Director of BarberShop, SP</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Trabalho e atendimento excelente, com certeza recomendo a empresa. Obrigado pela agilidade e atenção dada no projeto para criação do site da minha empresa.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Vitória Toccacelli</h3>
+                    <h5 class="review-job">enfermeira, SP</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Gostaria de dizer que o atendimento, administração da storm é surreal de bom. Parabéns a todos os envolvidos!!👏👏
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Sofia Arruda</h3>
+                    <h5 class="review-job">Confeiteira, SP </h5>
+                  </div>
                 </div>
               </div>
 
-              <div class="swiper-slide review">
-                <i class="fas fa-quote-left quote"></i>
-                <div class="rate">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-
-                <p class="review-text">
-                  Sabe quando você está perdida e não sabe oque fazer? eu estava assim até conhecer a storm.
-                </p>
-
-                <div class="review-info">
-                  <h3 class="review-name">Talita Oliveira</h3>
-                  <h5 class="review-job">CEO of Drope Sneakers, EUA</h5>
-                </div>
+              <div class="review-nav swiper-button-prev">
+                <i class="fas fa-long-arrow-alt-left"></i>
               </div>
-
-              <div class="swiper-slide review">
-                <i class="fas fa-quote-left quote"></i>
-                <div class="rate">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-
-                <p class="review-text">
-                  Fortaleceram muito na criação do sistema para barbearia.
-                </p>
-
-                <div class="review-info">
-                  <h3 class="review-name">Diego Acelino</h3>
-                  <h5 class="review-job">Director of BarberShop, SP</h5>
-                </div>
+              <div class="review-nav swiper-button-next">
+                <i class="fas fa-long-arrow-alt-right"></i>
               </div>
-
-              <div class="swiper-slide review">
-                <i class="fas fa-quote-left quote"></i>
-                <div class="rate">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-
-                <p class="review-text">
-                  Trabalho e atendimento excelente, com certeza recomendo a empresa. Obrigado pela agilidade e atenção
-                  dada no projeto para criação do site da minha empresa.
-                </p>
-
-                <div class="review-info">
-                  <h3 class="review-name">Vitória Toccacelli</h3>
-                  <h5 class="review-job">enfermeira, SP</h5>
-                </div>
-              </div>
-
-              <div class="swiper-slide review">
-                <i class="fas fa-quote-left quote"></i>
-                <div class="rate">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-
-                <p class="review-text">
-                  Gostaria de dizer que o atendimento, administração da storm é surreal de bom. Parabéns a todos os
-                  envolvidos!!👏👏
-                </p>
-
-                <div class="review-info">
-                  <h3 class="review-name">Sofia Arruda</h3>
-                  <h5 class="review-job">Confeiteira, SP </h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="review-nav swiper-button-prev">
-              <i class="fas fa-long-arrow-alt-left"></i>
-            </div>
-            <div class="review-nav swiper-button-next">
-              <i class="fas fa-long-arrow-alt-right"></i>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </header>
   <footer>
     <div class="container">
       <div class="content-footer">
         <div class="profile">
           <div class="logo-area">
             <img src="" alt="">
-            <span class="logo-name">STORM</span>
+            <span class="logo-name">STORM ADVOCACY</span>
           </div>
           <div class="desc-area">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.</p>
+            <p>Mantemos um olhar atento às mudanças, para garantir que nossa dedicação resulte em resultados jurídicos sólidos e satisfatórios.</p>
           </div>
           <div class="social-media">
             <a href=""><i class="uil uil-instagram"></i></a>
@@ -360,9 +335,10 @@ include('poup.php');
   <script src="js/home.js"></script>
   <script src="js/dark.js"></script>
   <script src="js/details.js"></script>
-  <script src="js/feedback.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/alert.js"></script>
 
+  
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
