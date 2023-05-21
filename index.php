@@ -8,16 +8,18 @@ include('poup.php');
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
+  <title>ADVOCACY</title>
   <link rel="stylesheet" href="css/index.css">
+  <!-- slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <!-- icon -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  <!-- slider -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- alert -->
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+  <!-- scroll -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body class="dark">
@@ -29,17 +31,17 @@ include('poup.php');
       <h1>Orientação Jurídica Personalizada para Você</h1>
       <p>Com um compromisso inabalável, trabalhamos com afinco para entender as necessidades individuais de cada cliente e oferecer orientação jurídica sólida e personalizada. </p>
       <?php
-    @session_start();
-    // @var_dump($_SESSION);
-    if (!isset($_SESSION['login'])) {
+      @session_start();
+      // @var_dump($_SESSION);
+      if (!isset($_SESSION['login'])) {
         $_SESSION['login'] = false;
-    }
-    if ($_SESSION['login'] === true) {
-      echo   '<a href=contato.php>Contato</a>';
-    } else {
+      }
+      if ($_SESSION['login'] === true) {
+        echo   '<a href=contato.php>Contato</a>';
+      } else {
         echo   "<a href=error.php>Contato</a>";
-    }
-      ?> 
+      }
+      ?>
     </div>
     <div class="content">
       <h1>Sempre Atualizados e Informados</h1>
@@ -140,7 +142,7 @@ include('poup.php');
       <div class="image">
         <img src="img/app/app.png" alt="">
       </div>
-      <div class="content">
+      <div class="content" id="ap">
         <h3>Solução fácil e perfeita no seu dispositivo móvel</h3>
         <p>Descubra o futuro da advocacia com o nosso novo aplicativo revolucionário: Advogo! Com
           S-ADVOCACY, a prática do direito está prestes a mudar para sempre.
@@ -159,7 +161,6 @@ include('poup.php');
         <div class="section-header">
           <h3 class="title" data-title="Oque as pessoas dizem sobre a">SA</h3>
         </div>
-
         <div class="testi-content grid-2">
           <div class="column-1 reviews">
             <div class="swiper-container">
@@ -175,12 +176,12 @@ include('poup.php');
                   </div>
 
                   <p class="review-text">
-                    Ótima empresa, super atenciosos e prestam um serviço de qualidade!
+                    Desde o primeiro contato até a conclusão do caso, fui tratado com respeito e recebi respostas claras e precisas para todas as minhas dúvidas e preocupações.
                   </p>
 
                   <div class="review-info">
-                    <h3 class="review-name">kylie</h3>
-                    <h5 class="review-job">model, CAN</h5>
+                    <h3 class="review-name">Lucas Rodrigues</h3>
+                    <h5 class="review-job">Designer Gráfico, SP</h5>
                   </div>
                 </div>
 
@@ -195,12 +196,12 @@ include('poup.php');
                   </div>
 
                   <p class="review-text">
-                    Sabe quando você está perdida e não sabe oque fazer? eu estava assim até conhecer a storm.
+                    Relação custo-benefício: SA ofereceu serviços jurídicos de qualidade a um preço justo e razoável. Considerando a expertise da equipe e os resultados obtidos, considero que recebi um excelente custo-benefício.
                   </p>
 
                   <div class="review-info">
-                    <h3 class="review-name">Talita Oliveira</h3>
-                    <h5 class="review-job">CEO of Drope Sneakers, EUA</h5>
+                    <h3 class="review-name">Larissa Costa</h3>
+                    <h5 class="review-job">Recepcionista, RJ</h5>
                   </div>
                 </div>
 
@@ -289,33 +290,38 @@ include('poup.php');
             <p>Mantemos um olhar atento às mudanças, para garantir que nossa dedicação resulte em resultados jurídicos sólidos e satisfatórios.</p>
           </div>
           <div class="social-media">
-            <a href=""><i class="uil uil-instagram"></i></a>
+            <a href="https://www.instagram.com/_stormcomp/"><i class="uil uil-instagram"></i></a>
             <a href=""><i class="uil uil-envelope-times"></i></a>
             <a href=""><i class="uil uil-linkedin"></i></a>
           </div>
         </div>
         <div class="service-area">
           <ul class="service-header">
-            <li class="service-name">Serviços</li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
+            <li class="service-name">links</li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="about.php">Sobre</a></li>
+            <li><a href="atuacoes.php">Áreas</a></li>
+            <?php
+            @session_start();
+            // @var_dump($_SESSION);
+            if (!isset($_SESSION['login'])) {
+              $_SESSION['login'] = false;
+            }
+            if ($_SESSION['login'] === true) {
+              echo   ' <li><a href=contato.php>Contato</a></li>';
+            } else {
+              echo   " <li><a href=error.php>Contato</a></li>";
+            }
+            ?>
           </ul>
           <ul class="service-header">
-            <li class="service-name">Serviços</li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
+            <li class="service-name">Sedes</li>
+            <li><a href="#!">São Paulo</a></li>
+            <li><a href="#!">Rio de Janeiro</a></li>
+            <li><a href="#!">Brasília</a></li>
+            <li><a href="#!">Estados Unidos</a></li>
           </ul>
-          <ul class="service-header">
-            <li class="service-name">Serviços</li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-          </ul>
+
         </div>
       </div>
       <hr>
@@ -325,11 +331,12 @@ include('poup.php');
           <span>2023 advocacy</span>
         </div>
         <div class="termos">
-          <a href="#!">term of use</a>
-          <a href="#!">privacy policy</a>
-          <a href="#!">cokie</a>
+          <a href="#!">Termos de uso</a>
+          <a href="#!">Política de Privacidade </a>
+          <a href="#!">Cokies</a>
         </div>
       </div>
+    </div>
     </div>
   </footer>
   <script src="js/home.js"></script>
@@ -337,9 +344,9 @@ include('poup.php');
   <script src="js/details.js"></script>
   <script src="js/app.js"></script>
   <script src="js/alert.js"></script>
+  <script src="js/scroll.js"></script>
 
-  
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
 </body>
