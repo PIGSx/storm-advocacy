@@ -2,7 +2,6 @@
 
 body {
     background-color: var(--back-fundo);
-    transition: 0.4s background-color;
 }
 
 section {
@@ -891,6 +890,11 @@ hr {
 .termos a:hover {
     color: var(--color-black);
 }
+/*==== scroll revel ====*/
+.home, #about, .details, .areas, .login, .image, #ap, #feedback{
+    visibility: hidden;
+}
+
 
 /*==== Responsive CSS ====*/
 

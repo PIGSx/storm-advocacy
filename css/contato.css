@@ -1,7 +1,7 @@
 @import "var.css";
+
 body {
     background-color: var(--back-fundo);
-    transition: 0.4s background-color;
 }
 
 /*==== banner inicial ====*/
