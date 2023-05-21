@@ -21,7 +21,7 @@ include('menu.php');
                 <div></div>
                 <div></div>
             </div>
-            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="text">Nossa equipe jurídica está pronta para ajudar em suas necessidades legais. Se você tem perguntas, precisa de uma consulta legal ou busca orientação especializada, nossos profissionais dedicados estão ansiosos para oferecer assistência confiável e personalizada.</p>
         </div>
         <div class="container">
             <div class="contact-info">
@@ -38,7 +38,7 @@ include('menu.php');
           <div>
             <span><i class = "fas fa-map-marker-alt"></i></span>
             <span>endereço</span>
-            <span class = "text">rua xxx xxxx xxx</span>
+            <span class = "text">R. Virgínia Ferni, 400</span>
           </div>
           <div>
             <span><i class = "fas fa-clock"></i></span>
@@ -62,7 +62,7 @@ include('menu.php');
           </form>
 
           <div>
-            <img src = "../img/contato/duvida.jpg" alt = "">
+            <img src = "img/contato/sa-red.png" alt = "">
           </div>
         </div>
       </div>
@@ -79,41 +79,44 @@ include('menu.php');
         <div class="profile">
           <div class="logo-area">
             <img src="" alt="">
-            <span class="logo-name">STORM</span>
+            <span class="logo-name">STORM ADVOCACY</span>
           </div>
           <div class="desc-area">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.</p>
+            <p>Mantemos um olhar atento às mudanças, para garantir que nossa dedicação resulte em resultados jurídicos sólidos e satisfatórios.</p>
           </div>
           <div class="social-media">
-            <a href=""><i class="uil uil-instagram"></i></a>
+            <a href="https://www.instagram.com/_stormcomp/"><i class="uil uil-instagram"></i></a>
             <a href=""><i class="uil uil-envelope-times"></i></a>
             <a href=""><i class="uil uil-linkedin"></i></a>
           </div>
         </div>
         <div class="service-area">
           <ul class="service-header">
-            <li class="service-name">Serviços</li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
+            <li class="service-name">links</li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="about.php">Sobre</a></li>
+            <li><a href="atuacoes.php">Áreas</a></li>
+            <?php
+            @session_start();
+            // @var_dump($_SESSION);
+            if (!isset($_SESSION['login'])) {
+              $_SESSION['login'] = false;
+            }
+            if ($_SESSION['login'] === true) {
+              echo   ' <li><a href=contato.php>Contato</a></li>';
+            } else {
+              echo   " <li><a href=error.php>Contato</a></li>";
+            }
+            ?>
           </ul>
           <ul class="service-header">
-            <li class="service-name">Serviços</li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
+            <li class="service-name">Sedes</li>
+            <li><a href="#!">São Paulo</a></li>
+            <li><a href="#!">Rio de Janeiro</a></li>
+            <li><a href="#!">Brasília</a></li>
+            <li><a href="#!">Estados Unidos</a></li>
           </ul>
-          <ul class="service-header">
-            <li class="service-name">Serviços</li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-            <li><a href="#!">staple</a></li>
-          </ul>
+
         </div>
       </div>
       <hr>
@@ -123,11 +126,12 @@ include('menu.php');
           <span>2023 advocacy</span>
         </div>
         <div class="termos">
-          <a href="#!">term of use</a>
-          <a href="#!">privacy policy</a>
-          <a href="#!">cokie</a>
+          <a href="#!">Termos de uso</a>
+          <a href="#!">Política de Privacidade </a>
+          <a href="#!">Cokies</a>
         </div>
       </div>
+    </div>
     </div>
   </footer>
   <script src="js/dark.js"></script>
