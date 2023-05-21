@@ -82,7 +82,7 @@ include('menu.php');
 
         echo            "<li class=sendMsg active>";
         echo                '<i class="ri-check-fill ri"></i>';
-        echo              '  <a href="#">contato</a>';
+        echo              '  <a href="https://calendly.com/pigsx/corte">agendamento</a>';
         echo            "</li>";
         echo       "</ul>";
         echo    "</div>";
@@ -104,12 +104,12 @@ include('menu.php');
         echo       " <ul>";
         echo           "<li class=phone>";
         echo              "<h1 class=label>caso:</h1>";
-        echo              "<span class=info>69</span>";
+        echo              "<span class=info>1910</span>";
         echo          "</li>";
 
         echo        "<li class=address>";
         echo            "<h1 class=label>status:</h1>";
-        echo          "<span class=info>quase bom mané</span>";
+        echo          "<span class=info>em andamento</span>";
         echo       "</li>";
         echo  "</ul>";
         echo   "</div>";
