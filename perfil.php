@@ -9,8 +9,8 @@ include('menu.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>your profile</title>
     <link rel="stylesheet" href="css/perfil.css">
-     <!-- icon -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body class="dark">
@@ -102,21 +102,27 @@ include('menu.php');
 
         echo    "<div class=contact_Info>";
         echo       " <ul>";
-        echo           "<li class=phone>";
-        echo              "<h1 class=label>caso:</h1>";
-        echo              "<span class=info>1910</span>";
-        echo          "</li>";
+        echo   "<div class=wrapper>";
+        echo   "<div class=select-btn>";
+        echo    "<span>Selecione seu estado</span>";
+        echo     '<i class="uil uil-angle-down"></i>';
+        echo   "</div>";
+        echo   "<div class=content>";
+        echo     "<div class=search>";
+        echo     '<i class="uil uil-search"></i>';
+        echo    "<input spellcheck=false type=text placeholder=buscar>";
+        echo  "</div>";
+        echo  "<ul class=options></ul>";
+        echo  "</div>";
+        echo  "</div>";
 
-        echo        "<li class=address>";
-        echo            "<h1 class=label>status:</h1>";
-        echo          "<span class=info>em andamento</span>";
-        echo       "</li>";
         echo  "</ul>";
         echo   "</div>";
         echo    "</section>";
         echo   "</div>";
         ?>
     </main>
+    <script src="js/perfil.js"></script>
     <script src="js/dark.js"></script>
 </body>
 
