@@ -23,24 +23,27 @@ body {
 .show-container h2 {
     font-size: 2rem;
 }
+
 /*==== about ====*/
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 100px 0;
 }
-.col-1{
+
+.col-1 {
     flex-basis: 40%;
     position: relative;
     margin-left: 250px;
 }
 
-.col-1 p{
+.col-1 p {
     font-size: 1rem;
     color: var(--color-black);
 }
-.col-1::after{
+
+.col-1::after {
     content: '';
     width: 10px;
     height: 57%;
@@ -49,6 +52,7 @@ body {
     left: -40px;
     top: 8px;
 }
+
 /*==== cards - areas ====*/
 
 img {
@@ -163,7 +167,8 @@ img {
 .img-description {
     width: 100%;
 }
-.img-overlay a{
+
+.img-overlay a {
     color: var(--details);
     font-size: 24px;
     line-height: 60px;
@@ -177,6 +182,7 @@ img {
     display: flex;
     position: absolute;
 }
+
 .img-overlay h3 {
     font-weight: 600;
     text-transform: uppercase;
@@ -326,7 +332,25 @@ hr {
 }
 
 /*==== Responsive CSS ====*/
+@media screen and (max-width: 1300) {
+
+    /*==== atuacoes ====*/
+    .gallery-image {
+        height: 500px;
+    }
+}
+
 @media screen and (max-width: 920px) {
+
+    /*==== menssagem ====*/
+    .col-1 {
+        margin-left: 125px;
+    }
+
+    /*==== atuacoes ====*/
+    .grid-item {
+        width: 50%;
+    }
 
     /*===== rodapé ====*/
     .content-footer {
@@ -353,7 +377,22 @@ hr {
         justify-content: center;
     }
 }
+@media (max-width: 770px){
+    .gallery-image img {
+        height: 100%;
+    }
+}
 
+@media (max-width: 724px){
+    .grid-item {
+        width: 450px;
+    }
+}
+@media (max-width: 640px){
+    .grid-item {
+        width: 300px;
+    }
+}
 @media (max-width: 560px) {
 
     /*==== rodapé ====*/
@@ -363,5 +402,15 @@ hr {
 
     .copy-righy {
         margin-bottom: 8px;
+    }
+}
+@media (max-width: 464px){
+    .grid-item {
+        width: 250px;
+    }
+}
+@media (max-width: 400px){
+    .grid-item {
+        width: 225px;
     }
 }

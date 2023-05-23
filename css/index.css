@@ -899,6 +899,12 @@ hr {
 /*==== Responsive CSS ====*/
 
 @media only screen and (max-width: 1300px) {
+     /*===== about ====*/
+
+    .about button{
+        display: flex;
+        margin-left: 30%;
+    }
 
     /*===== detalhes ====*/
     .cube-image {
