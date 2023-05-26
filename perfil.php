@@ -32,7 +32,7 @@ include('menu.php');
 
         echo   "<section class=userProfile card>";
         echo       "<div class=profile>";
-        echo       "<figure><img src=img/perfil/1.jpg alt=profile width=250px height250px></figure>";
+        echo       "<figure><img src=$perfil[foto] alt=profile width=250px height250px></figure>";
         echo "</div>";
         echo "</section>";
 

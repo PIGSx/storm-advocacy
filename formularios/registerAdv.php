@@ -23,7 +23,7 @@
         <div class="row gx-5">
             <div class="col-md-6">
                 <h2>ADVOGADO</h2>
-                <form action="registerAdv.act.php" method="post">
+                <form action="registerAdv.act.php" method="post" enctype="multipart/form-data">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control"  name="nome" placeholder="Digite seu nome">
                         <label for="name" class="form-label">Digite seu nome completo</label>
