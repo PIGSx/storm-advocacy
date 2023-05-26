@@ -19,6 +19,7 @@ $busca3 = mysqli_query($con, "Select * from `tb_advogado` where `email` = '$emai
             $_SESSION['cod'] = $contato['cod'];
             $_SESSION['nome'] = $contato['nome'];
             $_SESSION['email'] = $contato['email'];
+            $_SESSION['tipo'] = 1;
             $target = "location:../index.php";
         }else{
             $target = "location:login.php";
@@ -28,9 +29,10 @@ $busca3 = mysqli_query($con, "Select * from `tb_advogado` where `email` = '$emai
         $login = mysqli_fetch_array($busca2);
         if($senha === $login['senha']){
             $_SESSION['login'] = true;
-            $_SESSION['cod'] = $contato['cod'];
+            $_SESSION['cod'] = $login['cod'];
             $_SESSION['nome'] = $login['nome'];
             $_SESSION['email'] = $login['email'];
+            $_SESSION['tipo'] = 2;
             $target = "location:../index.php";
         }else{
             $target = "location:login.php";
@@ -40,9 +42,10 @@ $busca3 = mysqli_query($con, "Select * from `tb_advogado` where `email` = '$emai
         $login = mysqli_fetch_array($busca3);
         if($senha === $login['senha']){
             $_SESSION['login'] = true;
-            $_SESSION['cod'] = $contato['cod'];
+            $_SESSION['cod'] = $login['cod'];
             $_SESSION['nome'] = $login['nome'];
             $_SESSION['email'] = $login['email'];
+            $_SESSION['tipo'] = 3;
             $target = "location:../index.php";
         }else{
             $target = "location:login.php";

@@ -31,6 +31,7 @@
                     <div class="form-floating mb-3">
                         <p><input type="text" class="form-control" name="status" placeholder="Digite seus status" value="<?php echo $admin['status'] ?>"></p>
                     </div>
+                    <input type="hidden" name="cod" value=<?php echo "$cod"?>>
                     <input type="submit" class="btn btn-primary" value="alterar">
                 </form>
             </div>

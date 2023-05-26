@@ -3,9 +3,12 @@
  $senha = md5($senha);
  extract($_FILES);
  require('connect.php');
+ $endereco = "imgsperfil/".md5(time()).".jpg";
+ move_uploaded_file($foto['tmp_name'],$endereco);
 
-if(mysqli_query($con,"INSERT INTO `cadastro_login_cliente` (`cod`, `nome`, `email`, `celular`, `endereco`, `cidade`, `senha`, `cpf`) 
-VALUES (NULL, '$nome', '$email', '$celular', '$endereco', '$cidade', '$senha', '$cpf');")){
+
+if(mysqli_query($con,"INSERT INTO `cadastro_login_cliente` (`cod`, `nome`, `email`, `celular`, `endereco`, `cidade`, `senha`, `cpf`, `foto`) 
+VALUES (NULL, '$nome', '$email', '$celular', '$endereco', '$cidade', '$senha', '$cpf', '$endereco');")){
     $msg = "<p class=sucesso>Registro criado com sucesso!</p>";
     } else{
     $msg = "<p class=erro>Errou, tente novamente!</p>";

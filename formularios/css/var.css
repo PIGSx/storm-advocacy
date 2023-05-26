@@ -1,0 +1,28 @@
+body {
+    --color-black: #000;
+    --color-black-light: #777777;
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --details: #871034;
+    --back-primary: #19191f;
+    --back-fundo: #fff;
+    --back-glass: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3));
+}
+
+body.dark {
+    --color-black: #fff;
+    --color-white: #000;
+    --color-light: #777777;
+    --color-black-light: #f4f4f4;
+    --back-fundo: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}

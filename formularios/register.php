@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
     <title>registro</title>
 </head>
+
 <body>
 
-  <?php
-  session_start();
-  if(isset($_SESSION['msg'])){
-    echo $_SESSION['msg'];
-    unset($_SESSION['msg']);
-  }
-  ?>
+    <?php
+    session_start();
+    if (isset($_SESSION['msg'])) {
+        echo $_SESSION['msg'];
+        unset($_SESSION['msg']);
+    }
+    ?>
 
     <div class="container col-11 col-md-9 mt-4" id="form-container">
         <div class="row gx-5">
@@ -52,10 +54,13 @@
                         <input type="password" class="form-control" id="password" name="senha" placeholder="Crie sua senha">
                         <label for="senha" class="form-label">Crie sua senha<label>
                     </div>
-                    <div>
-                       
-                    </div>
-                    <input type="submit" class="btn btn-primary" value="cadastrar">
+                    <label for="file-input" class="drop-container">
+                        <span class="drop-title">Adicione sua foto de perfil</span>
+                        ou
+                        <input type="file" accept="image/*" required="" id="file-input" name="foto">
+                    </label>
+                </form>
+                <input type="submit" class="btn btn-primary" value="cadastrar">
                 </form>
             </div>
             <div class="col-6 mt-4">
@@ -73,4 +78,5 @@
 
 
 </body>
+
 </html>

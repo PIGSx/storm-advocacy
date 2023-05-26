@@ -60,9 +60,11 @@
                         <input type="password" class="form-control" id="password" name="senha" placeholder="Crie sua senha">
                         <label for="senha" class="form-label">Crie sua senha<label>
                     </div>
-                    <div>
-                       
-                    </div>
+                    <label for="file-input" class="drop-container">
+                        <span class="drop-title">Adicione sua foto de perfil</span>
+                        ou
+                        <input type="file" accept="image/*" required="" id="file-input" name="foto">
+                    </label>
                     <input type="submit" class="btn btn-primary" value="cadastrar">
                 </form>
             </div>
