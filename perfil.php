@@ -11,6 +11,9 @@ include('menu.php');
     <link rel="stylesheet" href="css/perfil.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+
 </head>
 
 <body class="dark">
@@ -18,9 +21,10 @@ include('menu.php');
         <?php
 
         require('connect.php');
-        if ($_SESSION['login'] == true) {
+    
+        if ($_SESSION['login'] == true && $_SESSION['tipo'] == 1) {
             $perfils = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente` WHERE `cadastro_login_cliente`.`cod` = '$_SESSION[cod]'");
-        } else if ($_SESSION['login'] == false) {
+        } else if ($_SESSION['login'] == true  && $_SESSION['tipo'] == 2) {
             $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `tb_cliente_juridico`.`cod`= '$_SESSION[cod]'");
         }
         $perfil = mysqli_fetch_array($perfils);
@@ -28,7 +32,7 @@ include('menu.php');
 
         echo   "<section class=userProfile card>";
         echo       "<div class=profile>";
-        echo       "<figure><img src=img/perfil/69.png alt=profile width=250px height250px></figure>";
+        echo       "<figure><img src=img/perfil/1.jpg alt=profile width=250px height250px></figure>";
         echo "</div>";
         echo "</section>";
 
@@ -53,9 +57,15 @@ include('menu.php');
         echo "</li>";
 
         echo     "<li class=site>";
-        echo        "<h1 class=label>CPF/CNPJ:</h1>";
-        echo        "<span class=desc>$perfil[cpf]</span>";
-        echo        "<span class=desc>$perfil[cnpj]</span>";
+        
+        if (isset($perfil['cpf'])){
+            echo        "<h1 class=label>CPF:</h1>";
+            echo        "<span class=desc>$perfil[cpf]</span>";
+        }else{
+            echo        "<h1 class=label>CNPJ:</h1>";
+            echo        "<span class=desc>$perfil[cnpj]</span>";
+        }
+      
         echo      "</li>";
         echo   "</ul>";
         echo    ' <a href=logoff.php>';
@@ -82,7 +92,7 @@ include('menu.php');
 
         echo            "<li class=sendMsg active>";
         echo                '<i class="ri-check-fill ri"></i>';
-        echo              '  <a href="https://calendly.com/pigsx/corte">agendamento</a>';
+        echo            '  <a onclick=exibirSweetAlert()>agendamento</a>';
         echo            "</li>";
         echo       "</ul>";
         echo    "</div>";
@@ -104,7 +114,7 @@ include('menu.php');
         echo       " <ul>";
         echo   "<div class=wrapper>";
         echo   "<div class=select-btn>";
-        echo    "<span>Selecione seu estado</span>";
+        echo    "<span>pesquisas jurídicas</span>";
         echo     '<i class="uil uil-angle-down"></i>';
         echo   "</div>";
         echo   "<div class=content>";
@@ -124,6 +134,10 @@ include('menu.php');
     </main>
     <script src="js/perfil.js"></script>
     <script src="js/dark.js"></script>
+    <script src="js/alert2.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+
 </body>
 
 </html>

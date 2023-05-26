@@ -91,7 +91,6 @@ include('menu.php');
       <div class="content-footer">
         <div class="profile">
           <div class="logo-area">
-            <img src="" alt="">
             <span class="logo-name">STORM ADVOCACY</span>
           </div>
           <div class="desc-area">
