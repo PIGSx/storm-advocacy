@@ -50,3 +50,4 @@ function showNextSlide() {
 }
 
 setInterval(showNextSlide, slideDuration);
+

@@ -3,9 +3,7 @@ const wrapper = document.querySelector(".wrapper"),
   searchInp = wrapper.querySelector("input"),
   options = wrapper.querySelector(".options");
 
-let countries = ["Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", 
-  "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", 
-  "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"];
+let countries = ["Jusbrasil", "LegisWeb", "Supremo Tribunal Federal", "Superior Tribunal de Justiça", "VLex Brasil",];
 
 function addCountry(selectedCountry) {
   options.innerHTML = "";
@@ -28,8 +26,11 @@ function updateName(selectedLi) {
 
 function getCountryWebsite(country) {
   const countryWebsites = {
-    "Acre": "https://www.google.com",
-    "Alagoas": "https://www.google.com",
+    "Jusbrasil": "https://www.jusbrasil.com.br",
+    "LegisWeb": "https://www.legisweb.com.br",
+    "Supremo Tribunal Federal": "https://www.stf.jus.br",
+    "Superior Tribunal de Justiça": "https://www.stj.jus.br",
+    "VLex Brasil": " https://www.vlex.com.br",
 
   };
 
