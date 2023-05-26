@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-black-light);
+    color: #fff;
     background: url(../img/atuacoes/back.jpg) no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: color;
@@ -59,7 +59,7 @@ img {
     width: 100%;
 }
 
-.container {
+.services .container {
     position: relative;
     z-index: 5;
     max-width: 92rem;
@@ -241,11 +241,11 @@ footer .container {
     border: 1px solid var(--color-white);
 }
 
-.logo-area .logo-nome {
+.logo-area .logo-name {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 1rem;
-    color: var(--color-black-light);
+    color: var(--color-black);
 }
 
 .desc-area {
@@ -330,7 +330,6 @@ hr {
 .termos a:hover {
     color: var(--color-black);
 }
-
 /*==== Responsive CSS ====*/
 @media screen and (max-width: 1300) {
 
