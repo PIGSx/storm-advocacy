@@ -3,7 +3,7 @@
  $senha = md5($senha);
  extract($_FILES);
  require('connect.php');
- $img = "imgsperfil/".md5(time()).".jpg";
+ $img = "../formularios/imgsperfil/".md5(time()).".jpg";
  move_uploaded_file($foto['tmp_name'],$img);
 
 

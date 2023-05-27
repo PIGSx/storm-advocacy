@@ -59,9 +59,9 @@
                         ou
                         <input type="file" accept="image/*" required="" id="file-input" name="foto">
                     </label>
+                    <input type="submit" class="btn btn-primary" value="cadastrar">
                 </form>
-                <input type="submit" class="btn btn-primary" value="cadastrar">
-                </form>
+               
             </div>
             <div class="col-6 mt-4">
                 <div class="row align-items-center">
