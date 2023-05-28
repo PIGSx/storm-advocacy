@@ -152,78 +152,19 @@ include('menu.php');
     </div>
   </section>
   <?php
-include('feed.php');
-?>
-  
-  <footer>
-    <div class="container">
-      <div class="content-footer">
-        <div class="profile">
-          <div class="logo-area">
-            <img src="" alt="">
-            <span class="logo-name">STORM ADVOCACY</span>
-          </div>
-          <div class="desc-area">
-            <p>Mantemos um olhar atento às mudanças, para garantir que nossa dedicação resulte em resultados jurídicos sólidos e satisfatórios.</p>
-          </div>
-          <div class="social-media">
-            <a href="https://www.instagram.com/_stormcomp/"><i class="uil uil-instagram"></i></a>
-            <a href=""><i class="uil uil-envelope-times"></i></a>
-            <a href=""><i class="uil uil-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="service-area">
-          <ul class="service-header">
-            <li class="service-name">links</li>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="about.php">Sobre</a></li>
-            <li><a href="atuacoes.php">Áreas</a></li>
-            <?php
-            @session_start();
-            // @var_dump($_SESSION);
-            if (!isset($_SESSION['login'])) {
-              $_SESSION['login'] = false;
-            }
-            if ($_SESSION['login'] === true) {
-              echo   ' <li><a href=contato.php>Contato</a></li>';
-            } else {
-              echo   " <li><a href=error.php>Contato</a></li>";
-            }
-            ?>
-          </ul>
-          <ul class="service-header">
-            <li class="service-name">Sedes</li>
-            <li><a href="#!">São Paulo</a></li>
-            <li><a href="#!">Rio de Janeiro</a></li>
-            <li><a href="#!">Brasília</a></li>
-            <li><a href="#!">Estados Unidos</a></li>
-          </ul>
-
-        </div>
-      </div>
-      <hr>
-      <div class="footer-bottom">
-        <div class="copy-right">
-          <i class="uil uil-copyright"></i>
-          <span>2023 advocacy</span>
-        </div>
-        <div class="termos">
-          <a href="#!">Termos de uso</a>
-          <a href="#!">Política de Privacidade </a>
-          <a href="#!">Cokies</a>
-        </div>
-      </div>
-    </div>
-    </div>
-  </footer>
+  include('feed.php');
+  ?>
+  <?php
+  include('footer.php');
+  ?>
   <script src="js/home.js"></script>
   <script src="js/dark.js"></script>
   <script src="js/details.js"></script>
   <script src="js/alert.js"></script>
   <script src="js/scroll.js"></script>
 
-  
- 
+
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
 </body>
