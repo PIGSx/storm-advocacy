@@ -31,24 +31,24 @@
                         <label for="name" class="form-label">Digite seu nome completo</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="last-name" name="email" placeholder="Digite seu sobrenome">
+                        <input type="text" class="form-control" id="last-name" name="email" placeholder="Digite seu email">
                         <label for="last-name" class="form-label">Digite seu e-mail</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="last-name" name="celular" placeholder="Digite seu email">
+                        <input type="number" class="form-control" id="last-name" name="celular" placeholder="Digite seu telefone">
                         <label for="celular" class="form-label">Digite o número do seu celular</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="last-name" name="endereco" placeholder="Digite sua senha">
+                        <input type="text" class="form-control" id="last-name" name="endereco" placeholder="Digite seu endereco">
                         <label for="endereco" class="form-label">Digite seu endereço<label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="last-name" name="cpf" placeholder="Digite sua senha">
-                        <label for="endereco" class="form-label">Digite seu Cpf<label>
+                        <input type="text" class="form-control" id="last-name" name="cidade" placeholder="Confirme sua cidade">
+                        <label for="cidade" class="form-label">Digite sua cidade<label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="last-name" name="cidade" placeholder="Confirme sua senha">
-                        <label for="cidade" class="form-label">Digite sua cidade<label>
+                        <input type="number" class="form-control" id="last-name" name="cpf" placeholder="Digite seu cpf">
+                        <label for="endereco" class="form-label">Digite seu Cpf<label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="password" name="senha" placeholder="Crie sua senha">
@@ -61,7 +61,6 @@
                     </label>
                     <input type="submit" class="btn btn-primary" value="cadastrar">
                 </form>
-               
             </div>
             <div class="col-6 mt-4">
                 <div class="row align-items-center">
@@ -75,8 +74,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>

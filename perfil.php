@@ -19,9 +19,7 @@ include('menu.php');
 <body class="dark">
     <main>
         <?php
-
         require('connect.php');
-    
         if ($_SESSION['login'] == true && $_SESSION['tipo'] == 1) {
             $perfils = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente` WHERE `cadastro_login_cliente`.`cod` = '$_SESSION[cod]'");
         } else if ($_SESSION['login'] == true  && $_SESSION['tipo'] == 2) {
@@ -32,7 +30,7 @@ include('menu.php');
 
         echo   "<section class=userProfile card>";
         echo       "<div class=profile>";
-        echo       "<figure><img src=$perfil[foto] alt=profile width=250px height250px></figure>";
+        echo       "<figure><img src=formularios/$perfil[foto] alt=profile width=250px height250px></figure>";
         echo "</div>";
         echo "</section>";
 
@@ -55,7 +53,6 @@ include('menu.php');
         echo      "<h1 class=label>E-mail:</h1>";
         echo     "<span class=desc>$perfil[email]</span>";
         echo "</li>";
-
         echo     "<li class=site>";
         
         if (isset($perfil['cpf'])){
@@ -81,7 +78,6 @@ include('menu.php');
         echo  "<section class=userDetails card>";
         echo     "<div class=userName>";
         echo         "<h1 class=name>$perfil[nome]</h1>";
-        echo         "<p>produtor audiovisual</p>";
         echo     "</div>";
         echo    "<div class=btns>";
         echo        "<ul>";

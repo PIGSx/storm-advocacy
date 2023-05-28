@@ -41,12 +41,12 @@
                         <label for="endereco" class="form-label">Digite seu endereço<label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="last-name" name="cnpj" placeholder="Digite sua senha">
-                        <label for="endereco" class="form-label">Digite seu cnpj<label>
-                    </div>
-                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="last-name" name="cidade" placeholder="Confirme sua senha">
                         <label for="cidade" class="form-label">Digite sua cidade<label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="last-name" name="cnpj" placeholder="Digite sua senha">
+                        <label for="endereco" class="form-label">Digite seu cnpj<label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="password" name="senha" placeholder="Crie sua senha">
