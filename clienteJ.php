@@ -18,11 +18,11 @@ include('menu-admin.php');
         <main>
             <?php
             require('connect.php');
-            $perfis = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente`");
+            $perfis = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico`");
             echo   "<div class=table-data>";
             echo    "<div class=order>";
             echo      "<div class=head>";
-            echo          " <h3>Nossos Clientes</h3>";
+            echo          " <h3>Nossos Clientes Juridicos</h3>";
             echo            "<i class='bx bx-search'></i>";
             echo            "<i class='bx bx-filter'></i>";
             echo       "</div>";
@@ -48,7 +48,7 @@ include('menu-admin.php');
             echo   "</div>";
             echo  "</div>";
             echo  "</td>";
-            echo  "<td>$perfil[cpf]</td>";
+            echo  "<td>$perfil[cnpj]</td>";
             echo  "<td>";
             echo  "<span class=status>ativo</span>";
             echo "</td>";
