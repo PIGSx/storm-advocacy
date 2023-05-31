@@ -6,7 +6,7 @@
 
     require('connect.php');
         if(!$texto == ""){
-            $perfis = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente`  where `nome` like '%$texto%'");
+            $perfis = mysqli_query($con, "SELECT * FROM tb_cliente_juridico`  where `nome` like '%$texto%'");
             echo       "<table width=100%>";
             echo              "<thead>";
             echo                "<tr>";
@@ -29,7 +29,7 @@
                 echo   "</div>";
                 echo  "</div>";
                 echo  "</td>";
-                echo  "<td>$perfil[cpf]</td>";
+                echo  "<td>$perfil[cnpj]</td>";
                 echo  "<td>";
                 echo  "<span class=status>$perfil[status]</span>";
                 echo "</td>";
