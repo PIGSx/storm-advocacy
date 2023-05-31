@@ -59,6 +59,7 @@
                         ou
                         <input type="file" accept="image/*" required="" id="file-input" name="foto">
                     </label>
+                    <input type="hidden" name="status" value="ativo">
                     <input type="submit" class="btn btn-primary" value="cadastrar">
                 </form>
             </div>
