@@ -41,7 +41,7 @@ include('menu.php');
     <div class="container">
 
       <div class="col-4">
-        <h1>Storm Adocacy</h1>
+        <h1>Storm Advocacy</h1>
         <p>Somos um escritório jurídico multidisciplinar em constante evolução, com 40 anos de
           experiência
           em oferecer soluções especializadas e contemporâneas para nossos clientes crescerem e
