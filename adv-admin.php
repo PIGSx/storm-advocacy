@@ -17,6 +17,10 @@ include('menu-admin.php');
     <section id=content>
         <main>
             <?php
+            if (isset($_SESSION['msg'])) {
+                echo "<p class=alert>$_SESSION[msg]</p>";
+                unset($_SESSION['msg']);
+            }
             require('connect.php');
             $admins = mysqli_query($con, "SELECT * FROM `tb_advogado`");
             echo   "<div class=table-data>";
@@ -34,29 +38,29 @@ include('menu-admin.php');
             echo                    "<th></span>CARGO</th>";
             echo                  "<th></span>STATUS</th>";
             echo                  "<th></span>DADOS</th>";
-            while($admin = mysqli_fetch_array($admins)){
-            echo             "</tr>";
-            echo        "</thead>";
-            echo        "<tbody>";
-            echo          "<tr>";
-            echo              "<td class=cod>$admin[cod]</td>";
-            echo             "<td>";
-            echo   "<div class=client>";
-            echo   "<div class=client-info>";
-            echo  "<h4>$admin[nome]</h4>";
-            echo  "<small>$admin[email]</small>";
-            echo   "</div>";
-            echo  "</div>";
-            echo  "</td>";
-            echo  "<td>$admin[cargo]</td>";
-            echo  "<td>";
-            echo  "<span class=status>$admin[status]</span>";
-            echo "</td>";
-            echo  "<td>";
-            echo  "<a href=./formularios/alterar-adv.php?cod=$admin[cod]><i class='uil uil-edit'></i></a>";
-            echo  "<a href=javascript:confirmar($admin[cod])><i class='uil uil-trash-alt'></i></a>";
-            echo "</td>";
-        }
+            while ($admin = mysqli_fetch_array($admins)) {
+                echo             "</tr>";
+                echo        "</thead>";
+                echo        "<tbody>";
+                echo          "<tr>";
+                echo              "<td class=cod>$admin[cod]</td>";
+                echo             "<td>";
+                echo   "<div class=client>";
+                echo   "<div class=client-info>";
+                echo  "<h4>$admin[nome]</h4>";
+                echo  "<small>$admin[email]</small>";
+                echo   "</div>";
+                echo  "</div>";
+                echo  "</td>";
+                echo  "<td>$admin[cargo]</td>";
+                echo  "<td>";
+                echo  "<span class=status>$admin[status]</span>";
+                echo "</td>";
+                echo  "<td>";
+                echo  "<a href=./formularios/alterar-adv.php?cod=$admin[cod]><i class='uil uil-edit'></i></a>";
+                echo  "<a href=javascript:confirmar($admin[cod])><i class='uil uil-trash-alt'></i></a>";
+                echo "</td>";
+            }
             echo  "</tr>";
             echo        "</tbody>";
             echo   "</table>";
@@ -65,10 +69,10 @@ include('menu-admin.php');
         </main>
     </section>
     <script>
-        function confirmar (codigo){
-            resposta = confirm ("deseja excluir o registro"+codigo+"?");
-            if(resposta == true){
-                window.location = "excluir.php?cod="+codigo;
+        function confirmar(cod) {
+            resposta = confirm("deseja excluir o registro" + cod + "?");
+            if (resposta == true) {
+                window.location = "excluir.php?cod=" + cod;
             }
         }
     </script>
