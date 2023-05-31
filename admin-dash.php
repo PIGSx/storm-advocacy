@@ -67,8 +67,10 @@ include('menu-admin.php');
                 echo  "<span class=status>$perfil[status]</span>";
                 echo "</td>";
                 echo  "<td>";
+                echo  "<div id=icones>";
                 echo  "<a href=./formularios/alterar-status.php?cod=$perfil[cod]><i class='uil uil-edit'></i></a>";
                 echo  "<a href=javascript:confirmar($perfil[cod])><i class='uil uil-trash-alt'></i></a>";
+                echo  "</div>";
                 echo "</td>";
             }
             echo "</div>";

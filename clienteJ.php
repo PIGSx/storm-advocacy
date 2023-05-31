@@ -57,8 +57,10 @@ include('menu-admin.php');
                 echo  "<span class=status>ativo</span>";
                 echo "</td>";
                 echo  "<td>";
+                echo  "<div id=icones>";
                 echo  "<a href=./formularios/alterar-adv.php?cod=$perfil[cod]><i class='uil uil-edit'></i></a>";
                 echo  "<a href=javascript:confirmar($perfil[cod])><i class='uil uil-trash-alt'></i></a>";
+                echo  "</div>";
                 echo "</td>";
             }
             echo  "</tr>";

@@ -1,8 +1,10 @@
 body {
     --color-black: #000;
     --color-black-light: #777777;
+    --color-black-light2: #777777;
     --color-white: #fff;
     --color-light: #f4f4f4;
+    --color-light2: #f4f4f4;
     --details: #871034;
     --back-primary: #19191f;
     --back-fundo: #fff;
@@ -15,6 +17,7 @@ body.dark {
     --color-black: #fff;
     --color-white: #000;
     --color-light: #777777;
+    --color-light2: rgb(26, 26, 26);
     --color-black-light: #f4f4f4;
     --back-fundo: #000;
 }

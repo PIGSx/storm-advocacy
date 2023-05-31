@@ -35,7 +35,14 @@ body {
     grid-gap: 16px;
     margin-bottom: 24px;
 }
-
+#content main .table-data .head i{
+    font-size: 20px;
+}
+#icones i{
+    font-size: 20px;
+    padding: 5px;
+    color: var(--details);
+}
 #content main .table-data .head h3 {
     margin-right: auto;
     font-size: 24px;
@@ -50,6 +57,7 @@ body {
 #content main .table-data .order {
     flex-grow: 1;
     flex-basis: 500px;
+    background-color: var(--color-light2);
 }
 
 #content main .table-data .todo {
@@ -132,13 +140,12 @@ table tbody tr .cod {
   .search__input {
     font-family: inherit;
     font-size: inherit;
-    background-color: #f4f2f2;
+    background-color: var(--color-light2);
     border: none;
     color: #646464;
     padding: 0.7rem 1rem;
     border-radius: 30px;
     width: 12em;
-    transition: all ease-in-out .5s;
     margin-right: -2rem;
   }
   
@@ -146,14 +153,9 @@ table tbody tr .cod {
     box-shadow: 0 0 1em #00000013;
   }
   
-  .search__input:focus {
-    outline: none;
-    background-color: #f0eeee;
-  }
-  
   .search__input::-webkit-input-placeholder {
     font-weight: 100;
-    color: #ccc;
+    color: var(--color-black);
   }
   
   .search__input:focus + .search__button {
