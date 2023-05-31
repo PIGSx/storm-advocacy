@@ -17,13 +17,26 @@ include('menu-admin.php');
     <section id=content>
         <main>
             <?php
+            if (isset($_SESSION['msg'])) {
+                echo "<p class=alert>$_SESSION[msg]</p>";
+                unset($_SESSION['msg']);
+            }
             require('connect.php');
             $perfis = mysqli_query($con, "SELECT * FROM `cadastro_login_cliente`");
             echo   "<div class=table-data>";
             echo    "<div class=order>";
             echo      "<div class=head>";
             echo          " <h3>Nossos Clientes</h3>";
-            echo            "<i class='bx bx-search'></i>";
+            echo  " <div class=search>";
+            echo    "<input type=text class=search__input placeholder=buscar onkeyup=pesquisar(this.value)";
+            echo   "<button class=search__button>";
+            echo        '<svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">';
+            echo           "<g>";
+            echo               '<path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>';
+            echo       "</g>";
+            echo     "</svg>";
+            echo   "</button>";
+            echo "</div>";
             echo            "<i class='bx bx-filter'></i>";
             echo       "</div>";
             echo       "<table width=100%>";
@@ -34,29 +47,31 @@ include('menu-admin.php');
             echo                    "<th></span>CPF</th>";
             echo                  "<th></span>STATUS</th>";
             echo                  "<th></span>DADOS</th>";
-            while($perfil = mysqli_fetch_array($perfis)){
-            echo             "</tr>";
-            echo        "</thead>";
-            echo        "<tbody>";
-            echo          "<tr>";
-            echo              "<td class=cod>$perfil[cod]</td>";
-            echo             "<td>";
-            echo   "<div class=client>";
-            echo   "<div class=client-info>";
-            echo  "<h4>$perfil[nome]</h4>";
-            echo  "<small>$perfil[email]</small>";
-            echo   "</div>";
-            echo  "</div>";
-            echo  "</td>";
-            echo  "<td>$perfil[cpf]</td>";
-            echo  "<td>";
-            echo  "<span class=status>ativo</span>";
-            echo "</td>";
-            echo  "<td>";
-            echo  "<a href=./formularios/alterar-adv.php?cod=$perfil[cod]><i class='uil uil-edit'></i></a>";
-            echo  "<a href=javascript:confirmar($perfil[cod])><i class='uil uil-trash-alt'></i></a>";
-            echo "</td>";
-        }
+            echo   "<div id=resultado>";
+            while ($perfil = mysqli_fetch_array($perfis)) {
+                echo             "</tr>";
+                echo        "</thead>";
+                echo        "<tbody>";
+                echo          "<tr>";
+                echo              "<td class=cod>$perfil[cod]</td>";
+                echo             "<td>";
+                echo   "<div class=client>";
+                echo   "<div class=client-info>";
+                echo  "<h4>$perfil[nome]</h4>";
+                echo  "<small>$perfil[email]</small>";
+                echo   "</div>";
+                echo  "</div>";
+                echo  "</td>";
+                echo  "<td>$perfil[cpf]</td>";
+                echo  "<td>";
+                echo  "<span class=status>$perfil[status]</span>";
+                echo "</td>";
+                echo  "<td>";
+                echo  "<a href=./formularios/alterar-status.php?cod=$perfil[cod]><i class='uil uil-edit'></i></a>";
+                echo  "<a href=javascript:confirmar($perfil[cod])><i class='uil uil-trash-alt'></i></a>";
+                echo "</td>";
+            }
+            echo "</div>";
             echo  "</tr>";
             echo        "</tbody>";
             echo   "</table>";
@@ -64,7 +79,24 @@ include('menu-admin.php');
             ?>
         </main>
     </section>
+    <Script>
+        function pesquisar(texto) {
+            $.ajax({
+                type: "post",
+                url: "pesquisa.act.php?texto=" + texto,
+                success: function(response) {
+                    $('#resultado').html(response);
+                }
+            });
+        }
 
+        function confirmar(cod) {
+            resposta = confirm("deseja excluir o registro" + cod + "?");
+            if (resposta == true) {
+                window.location = "excluir.php?cod=" + cod;
+            }
+        }
+    </Script>
     <script src="js/dark.js"></script>
 </body>
 
