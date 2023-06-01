@@ -19,150 +19,171 @@ include('menu.php');
 </head>
 
 <body class="dark">
-  <section class="home">
-    <video class="video-slide active" src="mp4/home/reuniao.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="mp4/home/digitando.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="mp4/home/mulher-andando.mp4" autoplay muted loop></video>
-    <div class="content active">
-      <h1>Orientação Jurídica Personalizada para Você</h1>
-      <p>Com um compromisso inabalável, trabalhamos com afinco para entender as necessidades individuais de cada cliente e oferecer orientação jurídica sólida e personalizada. </p>
-      <?php
-      @session_start();
-      // @var_dump($_SESSION);
-      if (!isset($_SESSION['login'])) {
-        $_SESSION['login'] = false;
-      }
-      if ($_SESSION['login'] === true) {
-        echo   '<a href=contato.php>Contato</a>';
-      } else {
-        echo   "<a href=error.php>Contato</a>";
-      }
-      ?>
-    </div>
-    <div class="content">
-      <h1>Sempre Atualizados e Informados</h1>
-      <p> Nossa dedicação em acompanhar de perto as pesquisas e desenvolvimentos no campo do direito nos permite oferecer soluções estratégicas e eficazes para atender às necessidades específicas de cada cliente.</p>
-      <a href="atuacoes.php">áreas</a>
-    </div>
-    <div class="content">
-      <h1>Mundo em Evolução</h1>
-      <p>No mundo atual, onde as demandas profissionais estão em constante evolução, a produtividade, flexibilidade e proatividade se tornaram fundamentais para o sucesso. </p>
-      <a href="about.php">sobre</a>
-    </div>
-    <div class="media-icons">
-      <a href="error.php"><i class="fab fa-facebook-f"></i></a>
-      <a href="error.php"><i class="fab fa-instagram"></i></a>
-      <a href="error.php"><i class="fab fa-twitter"></i></a>
-    </div>
-    <div class="slider-navigation">
-      <div class="nav-btn active"></div>
-      <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="main">
-      <video src="mp4/logo/logo-glitch.mp4" autoplay muted loop></video>
-      <!-- <img src="img/about/designer.PNG"> -->
-      <div class="all-text">
-        <h4>Sobre <span>Nós</span></h4>
-        <h1>STORM ADVOCACY</h1>
-        <p>
-          Nós acreditamos que os nossos talentos são os pilares fundamentais do nosso negócio. Por isso, não apenas
-          investimos em desenvolver profissionais qualificados, mas também em formar pessoas com habilidades para
-          enfrentar os desafios do mundo contemporâneo.</p>
-        <a href="about.php"><button>Nossa História</button></a>
-      </div>
-    </div>
-  </section>
-  <section class="details">
-    <div class="container">
-      <div class="wrap">
-        <div class="details-circle">
-          <h2 class="number">40</h2>
-          <h4 class="sub-title">anos de experiência</h4>
-        </div>
-      </div>
+  <article>
+    <button class="scrollTop" onclick="backTop();">
+      <img src="img/png/arrow2.png" alt="">
+    </button>
 
-      <div class="wrap">
-        <div class="details-circle active">
-          <h2 class="number">140</h2>
-          <h4 class="sub-title">clientes satisfeitos</h4>
+    <section class="home">
+      <video class="video-slide active" src="mp4/home/reuniao.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="mp4/home/digitando.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="mp4/home/mulher-andando.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Orientação Jurídica Personalizada para Você</h1>
+        <p>Com um compromisso inabalável, trabalhamos com afinco para entender as necessidades individuais de cada cliente e oferecer orientação jurídica sólida e personalizada. </p>
+        <?php
+        @session_start();
+        // @var_dump($_SESSION);
+        if (!isset($_SESSION['login'])) {
+          $_SESSION['login'] = false;
+        }
+        if ($_SESSION['login'] === true) {
+          echo   '<a href=contato.php>Contato</a>';
+        } else {
+          echo   "<a href=error.php>Contato</a>";
+        }
+        ?>
+      </div>
+      <div class="content">
+        <h1>Sempre Atualizados e Informados</h1>
+        <p> Nossa dedicação em acompanhar de perto as pesquisas e desenvolvimentos no campo do direito nos permite oferecer soluções estratégicas e eficazes para atender às necessidades específicas de cada cliente.</p>
+        <a href="atuacoes.php">áreas</a>
+      </div>
+      <div class="content">
+        <h1>Mundo em Evolução</h1>
+        <p>No mundo atual, onde as demandas profissionais estão em constante evolução, a produtividade, flexibilidade e proatividade se tornaram fundamentais para o sucesso. </p>
+        <a href="about.php">sobre</a>
+      </div>
+      <div class="media-icons">
+        <a href="error.php"><i class="fab fa-facebook-f"></i></a>
+        <a href="error.php"><i class="fab fa-instagram"></i></a>
+        <a href="error.php"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="main">
+        <video src="mp4/logo/logo-glitch.mp4" autoplay muted loop></video>
+        <!-- <img src="img/about/designer.PNG"> -->
+        <div class="all-text">
+          <h4>Sobre <span>Nós</span></h4>
+          <h1>STORM ADVOCACY</h1>
+          <p>
+            Nós acreditamos que os nossos talentos são os pilares fundamentais do nosso negócio. Por isso, não apenas
+            investimos em desenvolver profissionais qualificados, mas também em formar pessoas com habilidades para
+            enfrentar os desafios do mundo contemporâneo.</p>
+          <a href="about.php"><button>Nossa História</button></a>
         </div>
       </div>
+    </section>
+    <section class="details">
+      <div class="container">
+        <div class="wrap">
+          <div class="details-circle">
+            <h2 class="number">40</h2>
+            <h4 class="sub-title">anos de experiência</h4>
+          </div>
+        </div>
 
-      <div class="wrap">
-        <div class="details-circle">
-          <h2 class="number">60</h2>
-          <h4 class="sub-title">casos pro bono em 2022</h4>
+        <div class="wrap">
+          <div class="details-circle active">
+            <h2 class="number">140</h2>
+            <h4 class="sub-title">clientes satisfeitos</h4>
+          </div>
         </div>
-      </div>
 
-      <div class="wrap">
-        <div class="details-circle">
-          <h2 class="number">220</h2>
-          <h4 class="sub-title">empresas atendidas</h4>
+        <div class="wrap">
+          <div class="details-circle">
+            <h2 class="number">60</h2>
+            <h4 class="sub-title">casos pro bono em 2022</h4>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="details-circle">
+            <h2 class="number">220</h2>
+            <h4 class="sub-title">empresas atendidas</h4>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="areas">
-    <div class="areas-text">
-      <h4>Áreas</h4>
-      <h1>atuações</h1>
-      <p>Somos um escritório de advocacia com visão global e advogados especialistas em diversas praticas do
-        Direito.</b>
-      </p>
-      <a href="atuacoes.php"><button class="button">áreas</button></a>
-    </div>
-    <div class="main">
-      <img src="img/atuacoes/png/sa-red.PNG">
-    </div>
-  </section>
-  <section class="login">
-    <div class="inner-container">
-      <h1>Receba nossas atualizações jurídicas</h1>
-      <p>Para ler onde e quando quiser. Selecione os temas de interesse e cadastre-se preenchendo os campos
-        obrigatórios.</p>
-      <a class="fancy" onclick="alert()">
-        <span class="top-key"></span>
-        <span class="text">login</span>
-        <span class="bottom-key-1"></span>
-        <span class="bottom-key-2"></span>
-      </a>
-    </div>
-  </section>
-  <section class="app" id="app">
-    <h1 class="heading"> storm app</h1>
-    <div class="column">
-      <div class="image">
-        <img src="img/app/app.png" alt="">
-      </div>
-      <div class="content" id="ap">
-        <h3>Solução fácil e perfeita no seu dispositivo móvel</h3>
-        <p>Descubra o futuro da advocacia com o nosso novo aplicativo revolucionário: Advogo! Com
-          S-ADVOCACY, a prática do direito está prestes a mudar para sempre.
+    </section>
+    <section class="areas">
+      <div class="areas-text">
+        <h4>Áreas</h4>
+        <h1>atuações</h1>
+        <p>Somos um escritório de advocacia com visão global e advogados especialistas em diversas praticas do
+          Direito.</b>
         </p>
-        <p>S-ADVOCACY é a ferramenta definitiva para advogados modernos que desejam simplificar sua rotina e aumentar sua produtividade. Nosso aplicativo oferece uma variedade de recursos inteligentes e intuitivos, projetados para otimizar sua prática jurídica e fornecer uma experiência aprimorada para você e seus clientes.</p>
-        <div class="buttons">
-          <a href="error.php" class="btn"> <i class="fab fa-apple"></i> app store </a>
-          <a href="error.php" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+        <a href="atuacoes.php"><button class="button">áreas</button></a>
+      </div>
+      <div class="main">
+        <img src="img/atuacoes/png/sa-red.PNG">
+      </div>
+    </section>
+    <section class="login">
+      <div class="inner-container">
+        <h1>Receba nossas atualizações jurídicas</h1>
+        <p>Para ler onde e quando quiser. Selecione os temas de interesse e cadastre-se preenchendo os campos
+          obrigatórios.</p>
+        <a class="fancy" onclick="alert()">
+          <span class="top-key"></span>
+          <span class="text">login</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </a>
+      </div>
+    </section>
+    <section class="app" id="app">
+      <h1 class="heading"> storm app</h1>
+      <div class="column">
+        <div class="image">
+          <img src="img/app/app.png" alt="">
+        </div>
+        <div class="content" id="ap">
+          <h3>Solução fácil e perfeita no seu dispositivo móvel</h3>
+          <p>Descubra o futuro da advocacia com o nosso novo aplicativo revolucionário: Advogo! Com
+            S-ADVOCACY, a prática do direito está prestes a mudar para sempre.
+          </p>
+          <p>S-ADVOCACY é a ferramenta definitiva para advogados modernos que desejam simplificar sua rotina e aumentar sua produtividade. Nosso aplicativo oferece uma variedade de recursos inteligentes e intuitivos, projetados para otimizar sua prática jurídica e fornecer uma experiência aprimorada para você e seus clientes.</p>
+          <div class="buttons">
+            <a href="error.php" class="btn"> <i class="fab fa-apple"></i> app store </a>
+            <a href="error.php" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <?php
-  include('feed.php');
-  ?>
+    </section>
+    <?php
+    include('feed.php');
+    ?>
+  </article>
   <?php
   include('footer.php');
   ?>
+
+  <!-- script do scroll -->
+  <script>
+    window.addEventListener('scroll', function() {
+      let scroll = document.querySelector('.scrollTop')
+      scroll.classList.toggle('active', window.scrollY > 250)
+    })
+
+    function backTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  </script>
+
   <script src="js/home.js"></script>
   <script src="js/dark.js"></script>
   <script src="js/details.js"></script>
   <script src="js/alert.js"></script>
   <script src="js/scroll.js"></script>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
