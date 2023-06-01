@@ -35,14 +35,17 @@ body {
     grid-gap: 16px;
     margin-bottom: 24px;
 }
-#content main .table-data .head i{
+
+#content main .table-data .head i {
     font-size: 20px;
 }
-#icones i{
+
+#icones i {
     font-size: 20px;
     padding: 5px;
     color: var(--details);
 }
+
 #content main .table-data .head h3 {
     margin-right: auto;
     font-size: 24px;
@@ -135,9 +138,9 @@ table tbody tr .cod {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-  }
-  
-  .search__input {
+}
+
+.search__input {
     font-family: inherit;
     font-size: inherit;
     background-color: var(--color-light2);
@@ -147,33 +150,38 @@ table tbody tr .cod {
     border-radius: 30px;
     width: 12em;
     margin-right: -2rem;
-  }
-  
-  .search__input:hover, .search__input:focus {
+}
+
+.search__input:hover, .search__input:focus {
     box-shadow: 0 0 1em #00000013;
-  }
-  
-  .search__input::-webkit-input-placeholder {
+}
+
+.search__input::-webkit-input-placeholder {
     font-weight: 100;
     color: var(--color-black);
-  }
-  
-  .search__input:focus + .search__button {
+}
+
+.search__input:focus+.search__button {
     background-color: #f0eeee;
-  }
-  
-  .search__button {
+}
+
+.search__button {
     border: none;
     background-color: #f4f2f2;
     margin-top: .1em;
-  }
-  
-  .search__button:hover {
+}
+
+.search__button:hover {
     cursor: pointer;
-  }
-  
-  .search__icon {
+}
+
+.search__icon {
     height: 1.3em;
     width: 1.3em;
     fill: #b4b4b4;
-  }
+}
+
+/*==== mensagem caso não tenha arquivo ====*/
+#no-file{
+    color: red;
+}
