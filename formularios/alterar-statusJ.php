@@ -16,7 +16,7 @@
     <?php
     $cod = $_GET['cod'];
     require('connect.php');
-    $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `cadastro_login_cliente`.`cod` = '$cod'");
+    $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `tb_cliente_juridico`.`cod` = '$cod'");
     $perfil = mysqli_fetch_array($perfils);
     ?>
 

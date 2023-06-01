@@ -65,12 +65,20 @@ include('menu-admin.php');
                 echo  "</div>";
                 echo  "</td>";
                 echo  "<td>$perfil[cnpj]</td>";
-                echo  "<td>";
-                echo  "<span class=status>ativo</span>";
+                echo "<td>";
+                echo "<span class='status ";
+                if ($perfil['status'] == "ativo") {
+                    echo "success";
+                } elseif ($perfil['status'] == "inativo") {
+                    echo "danger";
+                } elseif ($perfil['status'] == "ausente") {
+                    echo "warning";
+                }
+                echo "'>$perfil[status]</span>";
                 echo "</td>";
                 echo  "<td>";
                 echo  "<div id=icones>";
-                echo  "<a href=./formularios/alterar-adv.php?cod=$perfil[cod]><i class='uil uil-edit'></i></a>";
+                echo  "<a href=./formularios/alterar-statusJ.php?cod=$perfil[cod]><i class='uil uil-edit'></i></a>";
                 echo  "<a href=javascript:confirmar($perfil[cod])><i class='uil uil-trash-alt'></i></a>";
                 echo  "</div>";
                 echo "</td>";

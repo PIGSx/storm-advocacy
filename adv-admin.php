@@ -53,8 +53,17 @@ include('menu-admin.php');
                 echo  "</div>";
                 echo  "</td>";
                 echo  "<td>$admin[cargo]</td>";
-                echo  "<td>";
-                echo  "<span class=status>$admin[status]</span>";
+                echo "<td>";
+                echo "<span class='status ";
+                if ($admin['status'] == "ativo") {
+                    echo "success";
+                } elseif ($admin['status'] == "inativo") {
+                    echo "danger";
+                } elseif ($admin['status'] == "ausente") {
+                    echo "warning";
+                }
+                echo "'>$admin[status]</span>";
+                echo "</td>";
                 echo "</td>";
                 echo  "<td>";
                 echo  "<div id=icones>";

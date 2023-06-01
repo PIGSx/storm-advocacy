@@ -185,3 +185,19 @@ table tbody tr .cod {
 #no-file{
     color: red;
 }
+
+/*==== status color ====*/
+.success {
+    background-color: green;
+    color: white;
+  }
+  
+  .danger {
+    background-color: red;
+    color: white;
+  }
+  
+  .warning {
+    background-color: yellow;
+    color: black;
+  }

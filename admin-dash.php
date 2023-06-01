@@ -64,8 +64,16 @@ include('menu-admin.php');
                 echo  "</div>";
                 echo  "</td>";
                 echo  "<td>$perfil[cpf]</td>";
-                echo  "<td>";
-                echo  "<span class=status>$perfil[status]</span>";
+                echo "<td>";
+                echo "<span class='status ";
+                if ($perfil['status'] == "ativo") {
+                    echo "success";
+                } elseif ($perfil['status'] == "inativo") {
+                    echo "danger";
+                } elseif ($perfil['status'] == "ausente") {
+                    echo "warning";
+                }
+                echo "'>$perfil[status]</span>";
                 echo "</td>";
                 echo  "<td>";
                 echo  "<div id=icones>";
