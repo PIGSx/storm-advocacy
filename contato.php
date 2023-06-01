@@ -13,6 +13,10 @@ include('menu.php');
 </head>
 
 <body class="dark">
+<article>
+    <button class="scrollTop" onclick="backTop();">
+      <img src="img/png/arrow2.png" alt="">
+    </button>
   <section class="contact-section">
     <div class="contact-title">
       <h2>entre em contato</h2>
@@ -72,10 +76,25 @@ include('menu.php');
     </div>
     </div>
     </div>
+    </article>
   </section>
   <?php
   include('footer.php');
   ?>
+    <!-- script do scroll -->
+    <script>
+    window.addEventListener('scroll', function() {
+      let scroll = document.querySelector('.scrollTop')
+      scroll.classList.toggle('active', window.scrollY > 250)
+    })
+
+    function backTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  </script>
   <script src="js/dark.js"></script>
 </body>
 

@@ -96,7 +96,7 @@ include('menu-admin.php');
         function confirmar(cod) {
             resposta = confirm("deseja excluir o registro" + cod + "?");
             if (resposta == true) {
-                window.location = "excluir.php?cod=" + cod;
+                window.location = "excluir-cliente.php?cod=" + cod;
             }
         }
     </Script>

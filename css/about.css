@@ -156,13 +156,43 @@ body {
 }
 
 .texts ul .active {
-    background: #000;
+    background: var(--details);
 }
 
 /*==== scroll revel ====*/
 #showcase, .about, .col-4, .col-3, .col-2, .col-1 {
     visibility: hidden;
 }
+
+/*==== botao inicio ====*/
+.scrollTop {
+    outline: none;
+    border: 0;
+    background-color: var(--details);
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.scrollTop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrollTop img {
+    width: 100%;
+    transform: rotate(180deg);
+}
+
 
 @media screen and (max-width: 1000px) {
 

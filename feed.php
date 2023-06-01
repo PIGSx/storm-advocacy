@@ -33,12 +33,12 @@
                   </div>
 
                   <p class="review-text">
-                    Desde o primeiro contato até a conclusão do caso, fui tratado com respeito e recebi respostas claras e precisas para todas as minhas dúvidas e preocupações.
+                  A transparência e a comunicação exemplares da SA são dignas de elogios. Eles me mantiveram informado durante todo o processo, explicando claramente todas as opções disponíveis e as possíveis consequências.
                   </p>
 
                   <div class="review-info">
-                    <h3 class="review-name">Lucas Rodrigues</h3>
-                    <h5 class="review-job">Designer Gráfico, SP</h5>
+                    <h3 class="review-name">Camila Carvalho </h3>
+                    <h5 class="review-job">Administradora de Empresas</h5>
                   </div>
                 </div>
 
@@ -73,12 +73,12 @@
                   </div>
 
                   <p class="review-text">
-                    Fortaleceram muito na criação do sistema para barbearia.
+                  O conhecimento especializado do escritório é impressionante. 
                   </p>
 
                   <div class="review-info">
-                    <h3 class="review-name">Diego Acelino</h3>
-                    <h5 class="review-job">Director of BarberShop, SP</h5>
+                    <h3 class="review-name">Gabriel Andrade</h3>
+                    <h5 class="review-job">Dentista, SP</h5>
                   </div>
                 </div>
 
@@ -93,12 +93,12 @@
                   </div>
 
                   <p class="review-text">
-                    Trabalho e atendimento excelente, com certeza recomendo a empresa. Obrigado pela agilidade e atenção dada no projeto para criação do site da minha empresa.
+                  Recomendo calorosamente o escritório de advocacia SA a todos que precisam de assistência jurídica. Sua equipe se mostrou altamente profissional, ética e comprometida em buscar a justiça em meu caso.
                   </p>
 
                   <div class="review-info">
-                    <h3 class="review-name">Vitória Toccacelli</h3>
-                    <h5 class="review-job">enfermeira, SP</h5>
+                    <h3 class="review-name">Pedro Santos</h3>
+                    <h5 class="review-job">médico, SP</h5>
                   </div>
                 </div>
 
@@ -113,12 +113,12 @@
                   </div>
 
                   <p class="review-text">
-                    Gostaria de dizer que o atendimento, administração da storm é surreal de bom. Parabéns a todos os envolvidos!!👏👏
+                  Estou impressionada com a abordagem proativa do escritório de advocacia em resolver meu caso. Eles identificaram rapidamente as melhores estratégias legais e me mantiveram informado sobre cada etapa do processo. Sua dedicação e profissionalismo são notáveis.
                   </p>
 
                   <div class="review-info">
-                    <h3 class="review-name">Sofia Arruda</h3>
-                    <h5 class="review-job">Confeiteira, SP </h5>
+                    <h3 class="review-name">RK Moda Feminina</h3>
+                    <h5 class="review-job">Kattia, SP </h5>
                   </div>
                 </div>
               </div>

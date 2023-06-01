@@ -31,7 +31,7 @@ section {
 
 .home .content {
     z-index: 888;
-    color: var(--color-white);
+    color: #fff;
     width: 70%;
     margin-top: 50px;
     display: none;
@@ -54,7 +54,7 @@ section {
 }
 
 .home .content a {
-    background: var(--color-white);
+    background: #fff;
     padding: 15px 35px;
     color: var(--details);
     font-size: 1.1em;
@@ -116,6 +116,7 @@ section {
     cursor: pointer;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     transition: 0.3s ease;
+    background-color: var(--details);
 }
 
 .slider-navigation .nav-btn.active {
@@ -609,7 +610,32 @@ section {
 .home, #about, .details, .areas, .login, .image, #ap, #feedback{
     visibility: hidden;
 }
-
+/*==== botao inicio ====*/
+.scrollTop{
+    outline: none;
+    border: 0;
+    background-color: var(--details);
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+.scrollTop.active{
+    opacity: 1;
+    visibility: visible;
+}
+.scrollTop img{
+    width: 100%;
+    transform: rotate(180deg);
+}
 
 /*==== Responsive CSS ====*/
 

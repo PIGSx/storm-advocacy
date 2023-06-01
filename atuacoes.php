@@ -13,6 +13,10 @@ include('menu.php');
 </head>
 
 <body class="black">
+<article>
+    <button class="scrollTop" onclick="backTop();">
+      <img src="img/png/arrow2.png" alt="">
+    </button>
   <section class="case">
     <div class="show-container">
       <h2>áreas de atuação</h2>
@@ -86,9 +90,24 @@ include('menu.php');
       </div>
     </div>
   </section>
+  </article>
   <?php
   include('footer.php');
   ?>
+    <!-- script do scroll -->
+    <script>
+    window.addEventListener('scroll', function() {
+      let scroll = document.querySelector('.scrollTop')
+      scroll.classList.toggle('active', window.scrollY > 250)
+    })
+
+    function backTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/services.js"></script>

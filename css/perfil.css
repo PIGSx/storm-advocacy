@@ -136,7 +136,7 @@ main {
 }
 
 .userDetails .btns ul li {
-    margin-right: 2.5rem;
+    margin-right: 1rem;
     border-radius: 0.5rem;
 }
 
@@ -146,8 +146,8 @@ main {
 }
 
 .userDetails .btns ul li a {
-    font-size: 1rem;
-    color: #000;
+    font-size: 14px;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -161,6 +161,32 @@ main {
     color: white;
 }
 
+/*==== botao ====*/
+.alter {
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+    height: 40px;
+    font-size: 0.7rem;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    transition: .2s .1s;
+    background-image: linear-gradient(90deg, #1c1c1c, #871034);
+    border: 0 solid;
+    overflow: hidden;
+}
+.alter:hover {
+    cursor: pointer;
+    transition: all .3s ease-in;
+    padding-right: 30px;
+    padding-left: 30px;
+}
 /*==== informações ====*/
 .timeline_about {
     padding: 2.5rem;
@@ -275,45 +301,53 @@ main {
 }
 
 /*==== atualizacoes ====*/
-.wrapper{
+.wrapper {
     width: 370px;
-  }
-  .select-btn, li{
+}
+
+.select-btn, li {
     display: flex;
     align-items: center;
     cursor: pointer;
-  }
-  .select-btn{
+}
+
+.select-btn {
     height: 60px;
     padding: 0 20px;
     font-size: 20px;
     background: #fff;
     border-radius: 7px;
     justify-content: space-between;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  .select-btn i{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn i {
     font-size: 30px;
     transition: transform 0.3s linear;
-  }
-  .wrapper.active .select-btn i{
+}
+
+.wrapper.active .select-btn i {
     transform: rotate(-180deg);
-  }
-  .content{
+}
+
+.content {
     display: none;
     padding: 20px;
     margin-top: 15px;
     background: #fff;
     border-radius: 7px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  .wrapper.active .content{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active .content {
     display: block;
-  }
-  .content .search{
+}
+
+.content .search {
     position: relative;
-  }
-  .search i{
+}
+
+.search i {
     top: 50%;
     left: 15px;
     color: #999;
@@ -321,8 +355,9 @@ main {
     pointer-events: none;
     transform: translateY(-50%);
     position: absolute;
-  }
-  .search input{
+}
+
+.search input {
     height: 50px;
     width: 100%;
     outline: none;
@@ -330,57 +365,67 @@ main {
     border-radius: 5px;
     padding: 0 20px 0 43px;
     border: 1px solid #B3B3B3;
-  }
-  .search input:focus{
+}
+
+.search input:focus {
     padding-left: 42px;
     border: 2px solid #4285f4;
-  }
-  .search input::placeholder{
+}
+
+.search input::placeholder {
     color: #bfbfbf;
-  }
-  .content .options{
+}
+
+.content .options {
     margin-top: 10px;
     max-height: 250px;
     overflow-y: auto;
     padding-right: 7px;
-  }
-  .options::-webkit-scrollbar{
+}
+
+.options::-webkit-scrollbar {
     width: 7px;
-  }
-  .options::-webkit-scrollbar-track{
+}
+
+.options::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 25px;
-  }
-  .options::-webkit-scrollbar-thumb{
+}
+
+.options::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 25px;
-  }
-  .options::-webkit-scrollbar-thumb:hover{
+}
+
+.options::-webkit-scrollbar-thumb:hover {
     background: #b3b3b3;
-  }
-  .options li{
+}
+
+.options li {
     height: 50px;
     padding: 0 13px;
     font-size: 21px;
-  }
-  .options li:hover, li.selected{
+}
+
+.options li:hover, li.selected {
     border-radius: 5px;
     background: #f2f2f2;
-  }
+}
 
-  .button-container {
+.button-container {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-  }
+}
 
-  .button-container:nth-child(2) {
+.button-container:nth-child(2) {
     margin-bottom: 0;
-  }
+}
 
-  .button-container a {
+.button-container a {
     margin-right: 10px;
-  }
+}
+
 
 @media screen and (max-width: 1024px) {
     html {
