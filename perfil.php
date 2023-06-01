@@ -83,12 +83,12 @@ include('menu.php');
         echo        "<ul>";
         echo            "<li class=sendMsg>";
         echo                '<i class="ri-chat-4-fill ri"></i>';
-        echo                ' <a href="./formularios/alterar-cliente.php">alterar dados</a>';
+        echo                '<button class=alter><a href="./formularios/alterar-cliente.php">alterar dados</a></button>';
         echo            "</li>";
 
         echo            "<li class=sendMsg active>";
         echo                '<i class="ri-check-fill ri"></i>';
-        echo            '  <a onclick=exibirSweetAlert()>agendamento</a>';
+        echo            '<button class=alter><a onclick=exibirSweetAlert()>agendamento</a></button>';
         echo            "</li>";
         echo       "</ul>";
         echo    "</div>";
