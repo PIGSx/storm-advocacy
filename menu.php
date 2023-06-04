@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
 
 </head>
 
@@ -65,7 +67,7 @@
         echo      "<li><a class=active href=index.php>início</a></li>";
         echo      "<li><a href=about.php>sobre</a></li>";
         echo      "<li><a href=atuacoes.php>áreas</a></li>";
-        echo      "<li><a href=#!>contato</a></li>";
+        echo      "<li><a href=#! onclick=alert2()>contato</a></li>";
         echo  "</ul>";
         echo     "<ul class=icons>";
         echo  "<div class=icons>";
@@ -83,8 +85,15 @@
         echo "</div>";
     }
     ?>
-
-
+    <script>
+        function alert2() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Para fazer um contato, realize seu login.'
+            })
+        }
+    </script>
     <script src="js/menu.js"></script>
 </body>
 

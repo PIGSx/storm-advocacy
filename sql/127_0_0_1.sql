@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 30-Maio-2023 às 21:32
+-- Tempo de geração: 03-Jun-2023 às 05:16
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `cadastro_login_cliente` (
   `foto` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`cod`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `cadastro_login_cliente`
@@ -59,7 +59,10 @@ INSERT INTO `cadastro_login_cliente` (`cod`, `nome`, `email`, `celular`, `endere
 (24, 'sntzera', 'snt@gmail.com', '1623783619', 'Praça Antônio Lazzarin', 'São Paulo', 'b2a9a16d67bddbb905264b3136f3c831', '16930835820', 'formularios/imgsperfil/16a87f8f9c1eca8323d3683907e636cc.jpg', 'ativo'),
 (25, 'Derek ', 'derek@gmail.com', '1137749820', 'Rua Marques Campão', 'São Paulo', '7c912fa77205d10095ce620fe1ccd17d', '48569967896', 'formularios/imgsperfil/cb42a6526adb0968d3edd47e4557a8a3.jpg', 'ativo'),
 (28, 'Diorgenis Sá ', 'dih.sa@gmail.com', '11967866366', 'Rua Madre Sofia', 'São Paulo', 'a01610228fe998f515a72dd730294d87', '12366754356', 'formularios/imgsperfil/03db23bc58a60d09c5bc001db5dd69bc.jpg', 'ativo'),
-(29, 'Dileira Melo', 'melo@gmail.com', '11943323445', 'Av. Paulista', 'São Paulo', '6512bd43d9caa6e02c990b0a82652dca', '22211233455', 'formularios/imgsperfil/52523ad56a42b675c6070c6febb4b33d.jpg', 'ativo');
+(29, 'Dileira Melo', 'melo@gmail.com', '11943323445', 'Av. Paulista', 'São Paulo', '6512bd43d9caa6e02c990b0a82652dca', '22211233455', 'formularios/imgsperfil/52523ad56a42b675c6070c6febb4b33d.jpg', 'ativo'),
+(30, 'gordao', 'gordaos@gmail.com', '11967866366', 'Rua Benedito Zupelli', 'São Paulo', 'a01610228fe998f515a72dd730294d87', '11111111111', 'imgsperfil/78fbb6074836b3d36ec1ba8fb4a9cb34.jpg', 'ativo'),
+(31, 'PIGSx', 'gordaoS@gmail.com', '11967866366', 'Rua Benedito Zupelli', 'sao paulo', 'c20ad4d76fe97759aa27a0c99bff6710', '11111111111', 'imgsperfil/0ded0a45c28432a82f14683a22a8eab3.jpg', 'ativo'),
+(33, 'Joana dark', 'joana@gmail.br', '11967866366', 'rua sua mae', 'sao paulo', 'a01610228fe998f515a72dd730294d87', '12121222133', 'imgsperfil/acc6e537fa8da15d23f2f128b67a4b63.jpg', 'ativo');
 
 -- --------------------------------------------------------
 
@@ -81,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `tb_advogado` (
   `senha` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
   `foto` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`cod`)
-) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_advogado`
