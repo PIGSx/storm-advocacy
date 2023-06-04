@@ -234,6 +234,13 @@ header {
 }
 
 @media screen and (max-width:993px) {
+    .header-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        margin-top: 200px;
+    }
     .timeline .container {
         width: 80%;
         transform: translateX(15px);
@@ -270,4 +277,6 @@ header {
 }
 
 
-@media screen and (max-width: 732px) {}
+@media screen and (max-width: 752px) {
+
+}
