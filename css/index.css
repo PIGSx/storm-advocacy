@@ -358,9 +358,9 @@ section {
     text-transform: uppercase;
     color: var(--details);
     z-index: 1;
-   }
-   
-   .button::before, .button::after {
+}
+
+.button::before, .button::after {
     content: '';
     display: block;
     width: 50px;
@@ -371,31 +371,31 @@ section {
     z-index: -1;
     background-color: var(--details);
     transition: 1s ease;
-   }
-   
-   .button::before {
+}
+
+.button::before {
     top: -1em;
     left: -1em;
-   }
-   
-   .button::after {
+}
+
+.button::after {
     left: calc(100% + 1em);
     top: calc(100% + 1em);
-   }
-   
-   .button:hover::before, .button:hover::after {
+}
+
+.button:hover::before, .button:hover::after {
     height: 410px;
     width: 410px;
-   }
-   
-   .button:hover {
+}
+
+.button:hover {
     color: rgb(10, 25, 30);
-   }
-   
-   .button:active {
+}
+
+.button:active {
     filter: brightness(.8);
-   }
-   
+}
+
 
 
 .areas .main img {
@@ -607,11 +607,12 @@ section {
 }
 
 /*==== scroll revel ====*/
-.home, #about, .details, .areas, .login, .image, #ap, #feedback{
+.home, #about, .details, .areas, .login, .image, #ap, #feedback {
     visibility: hidden;
 }
+
 /*==== botao inicio ====*/
-.scrollTop{
+.scrollTop {
     outline: none;
     border: 0;
     background-color: var(--details);
@@ -628,11 +629,13 @@ section {
     visibility: hidden;
     transition: all .4s ease-in-out;
 }
-.scrollTop.active{
+
+.scrollTop.active {
     opacity: 1;
     visibility: visible;
 }
-.scrollTop img{
+
+.scrollTop img {
     width: 100%;
     transform: rotate(180deg);
 }
@@ -640,9 +643,9 @@ section {
 /*==== Responsive CSS ====*/
 
 @media only screen and (max-width: 1300px) {
-     /*===== about ====*/
+    /*===== about ====*/
 
-    .about button{
+    .about button {
         display: flex;
         margin-left: 30%;
     }
@@ -725,6 +728,15 @@ section {
 }
 
 @media (max-width: 850px) {
+
+    /*==== banner slide ====*/
+    .home .content h1 {
+        font-size: 1rem;
+        letter-spacing: 0;
+        line-height: 50px;
+        margin-bottom: 5px;
+    }
+
     .details .container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -800,7 +812,7 @@ section {
 
     /*===== banner ====*/
     .home .content h1 {
-        font-size: 3em;
+        font-size: 1em;
         line-height: 60px;
     }
 
