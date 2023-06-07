@@ -160,3 +160,18 @@
 .swiper-button-next:after {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .review-text {
+        font-size: 1rem;
+    }
+}

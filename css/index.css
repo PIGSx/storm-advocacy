@@ -2,6 +2,7 @@
 
 body {
     background-color: var(--back-fundo);
+    overflow-x: hidden;
 }
 
 section {
@@ -657,7 +658,13 @@ section {
 }
 
 @media (max-width: 1280px) {
-
+    /*==== about ====*/
+    .about{
+        margin-top: 80px;
+    }
+    .about button{
+        margin-bottom: 60px;
+    }
     /*===== detalhes ====*/
     .details-circle {
         width: 150px;
@@ -683,7 +690,6 @@ section {
     .home .media-icons {
         right: 15px;
     }
-
     /*===== login ====*/
     .inner-container {
         padding: 80px;

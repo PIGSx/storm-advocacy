@@ -21,11 +21,11 @@ body.dark {
     --color-black-light: #f4f4f4;
     --back-fundo: #000;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
