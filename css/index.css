@@ -644,8 +644,8 @@ section {
 /*==== Responsive CSS ====*/
 
 @media only screen and (max-width: 1300px) {
-    /*===== about ====*/
 
+    /*===== about ====*/
     .about button {
         display: flex;
         margin-left: 30%;
@@ -658,13 +658,16 @@ section {
 }
 
 @media (max-width: 1280px) {
+
     /*==== about ====*/
-    .about{
+    .about {
         margin-top: 80px;
     }
-    .about button{
+
+    .about button {
         margin-bottom: 60px;
     }
+
     /*===== detalhes ====*/
     .details-circle {
         width: 150px;
@@ -690,6 +693,7 @@ section {
     .home .media-icons {
         right: 15px;
     }
+
     /*===== login ====*/
     .inner-container {
         padding: 80px;
@@ -801,7 +805,7 @@ section {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     /*===== atuacoes ====*/
     .areas .main img {
@@ -814,7 +818,7 @@ section {
     }
 }
 
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
 
     /*===== banner ====*/
     .home .content h1 {
@@ -833,10 +837,29 @@ section {
     }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
 
     /*==== qualificações ====*/
     .grid {
         gap: 6rem;
+    }
+}
+
+/* responsive for celular deitado */
+@media screen and (orientation: landscape) {
+
+    /*===== about - sobre ====*/
+    .about {
+        margin-top: 16rem;
+    }
+
+    /*===== detalhes ====*/
+
+    .details{
+        margin-top: 16rem;
+    }
+    /*==== atuações ====*/
+    .areas{
+        margin-top: 10rem;
     }
 }
