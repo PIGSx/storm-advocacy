@@ -846,20 +846,64 @@ section {
 }
 
 /* responsive for celular deitado */
-@media screen and (orientation: landscape) {
+
+@media screen and (orientation: landscape) and (max-width: 1400px) {
 
     /*===== about - sobre ====*/
     .about {
-        margin-top: 16rem;
+        margin-top: 3rem;
     }
 
     /*===== detalhes ====*/
 
-    .details{
-        margin-top: 16rem;
-    }
-    /*==== atuações ====*/
-    .areas{
+    .details {
         margin-top: 10rem;
+    }
+
+    /*==== atuações ====*/
+    .areas {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 804px) {
+
+    /*===== about - sobre ====*/
+    .about {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 737px) {
+
+    /*===== about - sobre ====*/
+    .about {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 630px) {
+
+    /*===== about - sobre ====*/
+    .about {
+        margin-top: 10rem;
+    }
+
+    /*===== detalhes ====*/
+    .details {
+        margin-top: 11rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 537px) {
+
+    /*===== about - sobre ====*/
+    .about {
+        margin-top: 14rem;
+    }
+
+    /*===== detalhes ====*/
+    .details {
+        margin-top: 14rem;
     }
 }
