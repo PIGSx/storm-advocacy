@@ -3,7 +3,7 @@ function exibirSweetAlert() {
     title: 'Escolha uma opção',
     html: `
       <div class="button-container">
-        <a href="https://calendly.com/pigsx/reuniao" class="swal2-confirm swal2-styled">Débora Andrade</a>
+        <a href="https://calendly.com/pigsx/reuniao" target="_blank" class="swal2-confirm swal2-styled">Débora Andrade</a>
         <a href="error.php" class="swal2-cancel swal2-styled">Eduardo Moraes</a>
       </div>
       <div class="button-container">

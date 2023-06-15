@@ -157,7 +157,7 @@ section {
     width: 580px;
     max-width: 100%;
     height: auto;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
 .all-text {
@@ -485,7 +485,7 @@ section {
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     text-decoration: none;
-    color: #871034;
+    color: white;
 }
 
 .fancy .top-key {
@@ -643,8 +643,7 @@ section {
 
 /*==== Responsive CSS ====*/
 
-@media only screen and (max-width: 1300px) {
-
+@media screen and (max-width: 1300px) {
     /*===== about ====*/
     .about button {
         display: flex;
@@ -657,7 +656,7 @@ section {
     }
 }
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
     /*==== about ====*/
     .about {
@@ -684,7 +683,7 @@ section {
     }
 }
 
-@media (max-width: 1040px) {
+@media screen and (max-width: 1040px) {
     section {
         padding: 100px 20px;
     }
@@ -700,7 +699,7 @@ section {
     }
 }
 
-@media only screen and (min-width: 970px) {
+@media screen and (min-width: 970px) {
 
     /*===== detalhes ====*/
     .main-text {
@@ -737,7 +736,7 @@ section {
     }
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
 
     /*==== banner slide ====*/
     .home .content h1 {
@@ -865,7 +864,6 @@ section {
         margin-top: 10rem;
     }
 }
-
 @media screen and (orientation: landscape) and (max-height: 804px) {
 
     /*===== about - sobre ====*/

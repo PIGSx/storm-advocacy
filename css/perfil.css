@@ -150,7 +150,11 @@ main {
     color: #fff;
     font-weight: 500;
 }
-
+.userDetails .btns ul li a .alter{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
 .userDetails .btns ul .active {
     background: var(--back-primary);
     padding: 0.5rem 1.5rem;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
     --color-black: #000;
     --color-black-light: #777777;
@@ -20,6 +21,9 @@ body.dark {
     --color-light2: rgb(26, 26, 26);
     --color-black-light: #f4f4f4;
     --back-fundo: #000;
+    --back-glass: linear-gradient(to right bottom,
+    rgba(37, 37, 37, 0.5),
+    rgba(20, 20, 20, 0.3));
 }
 * {
     margin: 0;
