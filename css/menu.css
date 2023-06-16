@@ -1,10 +1,10 @@
 @import "var.css";
 
-
 html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
+
 
 .menu {
     background-color: var(--color-white);
@@ -198,6 +198,7 @@ nav .container ul .icons i{
     /* menu */
     .hamburguer-menu-container {
         display: flex;
+        margin-right: 50px;
     }
 
     #check {
@@ -216,23 +217,26 @@ nav .container ul .icons i{
         width: 100%;
     }
 
-    nav .container ul {
+    nav .container ul{
         position: fixed;
-        top: 4rem;
+        top: 4.9rem;
         left: 0;
         z-index: 3;
         width: 50%;
         height: 92%;
         background: var(--color-white);
         flex-direction: column;
-        box-shadow: 1rem 0 2rem #87103456;
         overflow-x: hidden;
         transform: translateX(60rem);
         transition: transform 0.5s ease-in;
     }
 
-    #check:checked~.links {
+    #check:checked~.links{
         transform: translateX(0);
+    }
+    #check:checked~.icons{
+        transform: translateX(0);
+        margin-top: 30rem;
     }
 
     nav ul li {

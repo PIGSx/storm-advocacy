@@ -22,7 +22,7 @@ body.dark {
     --color-black-light: #f4f4f4;
     --back-fundo: #000;
     --back-glass: linear-gradient(to right bottom,
-    rgba(37, 37, 37, 0.5),
+    rgba(17, 17, 17, 0.5),
     rgba(20, 20, 20, 0.3));
 }
 * {

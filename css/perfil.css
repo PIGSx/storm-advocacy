@@ -25,7 +25,7 @@ main {
     background: var(--back-glass);
     padding: 1.5rem;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(0, 0, 0, 0.08);
-    transition: 0.4s background-color;
+    transition: 0.4s background;
 }
 
 /*==== Container Cards Grid-area ====*/
@@ -94,20 +94,18 @@ main {
     right: 0;
     height: 0.1rem;
     width: 88%;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--color-black)
 }
 
 .information .info .label {
     font-size: 1.2rem;
     color: var(--color-black);
-    transition: 0.4s color;
 }
 
 .information .info .desc {
     font-size: 1rem;
     color: var(--color-black-light);
     margin-top: 6px;
-    transition: 0.4s color;
 }
 
 /*==== detalhes ====*/
@@ -119,7 +117,6 @@ main {
 .userDetails .userName h1 {
     font-size: 1.6rem;
     color: var(--color-black);
-    transition: 0.4s color;
 }
 
 .userDetails .userName p {
@@ -200,7 +197,6 @@ main {
     color: var(--color-black-light);
     font-size: 1.2rem;
     font-weight: 500;
-    transition: 0.4s color;
 }
 
 .timeline_about .tabs ul {
@@ -217,7 +213,7 @@ main {
     right: 0;
     width: 100%;
     height: 1px;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--color-black);
 }
 
 .contact_Info .label {
@@ -429,23 +425,25 @@ main {
 .button-container a {
     margin-right: 10px;
 }
-
+.hamburguer-menu div {
+    width: 2rem;
+}
 
 @media screen and (max-width: 1024px) {
     html {
-        font-size: 9px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 900px) {
     html {
-        font-size: 8px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     /* ===== =====>>  Container Css Start  <<===== ===== */
@@ -483,5 +481,16 @@ main {
             width: 100%;
             overflow: initial;
         }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .hamburguer-menu-container {
+        display: flex;
+        margin-right: 20px;
+    }
+    nav .container ul{
+        transform: translateX(120rem);
+        transition: transform 0.5s ease-in;
     }
 }

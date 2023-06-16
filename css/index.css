@@ -2,7 +2,6 @@
 
 body {
     background-color: var(--back-fundo);
-    overflow-x: hidden;
 }
 
 section {
@@ -361,7 +360,8 @@ section {
     z-index: 1;
 }
 
-.button::before, .button::after {
+.button::before,
+.button::after {
     content: '';
     display: block;
     width: 50px;
@@ -384,7 +384,8 @@ section {
     top: calc(100% + 1em);
 }
 
-.button:hover::before, .button:hover::after {
+.button:hover::before,
+.button:hover::after {
     height: 410px;
     width: 410px;
 }
@@ -608,7 +609,14 @@ section {
 }
 
 /*==== scroll revel ====*/
-.home, #about, .details, .areas, .login, .image, #ap, #feedback {
+.home,
+#about,
+.details,
+.areas,
+.login,
+.image,
+#ap,
+#feedback {
     visibility: hidden;
 }
 
@@ -623,7 +631,7 @@ section {
     border-radius: 50%;
     display: flex;
     position: fixed;
-    right: 20px;
+    right: 36px;
     bottom: 30px;
     z-index: 999;
     opacity: 0;
@@ -644,6 +652,7 @@ section {
 /*==== Responsive CSS ====*/
 
 @media screen and (max-width: 1300px) {
+
     /*===== about ====*/
     .about button {
         display: flex;
@@ -864,6 +873,7 @@ section {
         margin-top: 10rem;
     }
 }
+
 @media screen and (orientation: landscape) and (max-height: 804px) {
 
     /*===== about - sobre ====*/
