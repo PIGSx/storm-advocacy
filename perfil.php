@@ -42,25 +42,25 @@ include('menu.php');
         echo "<ul>";
         echo "<li class=phone>";
         echo  "<h1 class=label>Celular:</h1>";
-        echo "<span class=desc>$perfil[celular]</span>";
+        echo "<span class=desc> $perfil[celular]</span>";
         echo "</li>";
 
         echo     "<li class=address>";
         echo         "<h1 class=label>endereço:</h1>";
-        echo         "<span class=desc>$perfil[endereco]</span>";
+        echo         "<span class=desc> $perfil[endereco]</span>";
         echo     "</li>";
         echo    "<li class=email>";
         echo      "<h1 class=label>E-mail:</h1>";
-        echo     "<span class=desc>$perfil[email]</span>";
+        echo     "<span class=desc> $perfil[email]</span>";
         echo "</li>";
         echo     "<li class=site>";
         
         if (isset($perfil['cpf'])){
             echo        "<h1 class=label>CPF:</h1>";
-            echo        "<span class=desc>$perfil[cpf]</span>";
+            echo        "<span class=desc> $perfil[cpf]</span>";
         }else{
             echo        "<h1 class=label>CNPJ:</h1>";
-            echo        "<span class=desc>$perfil[cnpj]</span>";
+            echo        "<span class=desc> $perfil[cnpj]</span>";
         }
       
         echo      "</li>";

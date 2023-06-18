@@ -1,5 +1,7 @@
 @import "var.css";
-
+nav i{
+	color: var(--color-black);
+}
 #sidebar {
 	position: fixed;
 	top: 0;

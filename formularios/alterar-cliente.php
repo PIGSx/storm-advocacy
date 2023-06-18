@@ -27,7 +27,7 @@
     <div class="container col-11 col-md-9 mt-4" id="form-container">
         <div class="row gx-5">
             <div class="col-md-6">
-                <h2>Atualize seus dados</h2>
+                <h2 id="dados">Atualize seus dados</h2>
                 <form method="post" action="alterar-cliente.act.php">
                     <div class="form-floating mb-3">
                         <p><input type="text" class="form-control" name="nome" placeholder="Digite seu nome" value="<?php echo $perfil['nome'] ?>"></p>

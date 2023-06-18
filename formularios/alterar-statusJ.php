@@ -18,15 +18,27 @@
     require('connect.php');
     $perfils = mysqli_query($con, "SELECT * FROM `tb_cliente_juridico` WHERE `tb_cliente_juridico`.`cod` = '$cod'");
     $perfil = mysqli_fetch_array($perfils);
+    $perfil_status = $perfil['status'];
     ?>
 
     <div class="container col-11 col-md-9 mt-4" id="form-container">
         <div class="row gx-5">
             <div class="col-md-6">
-                <h2>Atualize seus dados</h2>
+                <h2 id="dados">Atualize os status</h2>
                 <form action="alterar-statusJ.act.php" method="post">
-                    <div class="form-floating mb-3">
-                        <p><input type="text" class="form-control" name="status" placeholder="Digite seus status" value="<?php echo $perfil['status'] ?>"></p>
+                <div class="options">
+                        <label>
+                            <input type="radio" name="status" value="ativo" <?php if ($perfil_status === "ativo") echo "checked"; ?>>
+                            <span>ATIVO</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="inativo" <?php if ($perfil_status === "inativo") echo "checked"; ?>>
+                            <span>INATIVO</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="ausente" <?php if ($perfil_status === "ausente") echo "checked"; ?>>
+                            <span>AUSENTE</span>
+                        </label>
                     </div>
                     <input type="hidden" name="cod" value=<?php echo "$cod"?>>
                     <input type="submit" class="btn btn-primary" value="alterar">
