@@ -21,8 +21,7 @@
         <div class="popup-box">
             <i class="fas fa-times close-btn"></i>
             <h2>ATENÇÃO</h2>
-            <P>para ter acesso completo do site, realize seu login</P>
-            <a href="#!" class="btn">inscreva-se</a>
+            <P>isso é um projeto de tcc, não utilize dados reais.</P>
         </div>
     </div>
     <script src="js/poup.js"></script>

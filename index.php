@@ -1,5 +1,6 @@
 <?php
 include('menu.php');
+include('poup.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
